@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Angle的博客</title>
+  
+  <subtitle>笔随心动，心随笔行。陶然自得，乐在其中!</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://ww.lsk.cool/"/>
+  <updated>2020-05-01T11:11:38.808Z</updated>
+  <id>http://ww.lsk.cool/</id>
+  
+  <author>
+    <name>Angle</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>xshell 6 连接</title>
+    <link href="http://ww.lsk.cool/2020/05/01/xshell-6-lian-jie/"/>
+    <id>http://ww.lsk.cool/2020/05/01/xshell-6-lian-jie/</id>
+    <published>2020-05-01T11:57:23.000Z</published>
+    <updated>2020-05-01T11:11:38.808Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;第一章：连接服务器的两种工具&quot;&gt;&lt;a href=&quot;#第一章：连接服务器的两种工具&quot; class=&quot;headerlink&quot; title=&quot;第一章：连接服务器的两种工具&quot;&gt;&lt;/a&gt;第一章：连接服务器的两种工具&lt;/h4&gt;&lt;p&gt;​   
+        
+      
+    
+    </summary>
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/categories/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/tags/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>无法连接虚拟机、上网排错</title>
+    <link href="http://ww.lsk.cool/2020/05/01/wu-fa-lian-jie-xu-ni-ji-shang-wang-pai-cuo/"/>
+    <id>http://ww.lsk.cool/2020/05/01/wu-fa-lian-jie-xu-ni-ji-shang-wang-pai-cuo/</id>
+    <published>2020-05-01T11:57:23.000Z</published>
+    <updated>2020-05-01T11:15:14.381Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;第1章：无法连接虚拟机排错&quot;&gt;&lt;a href=&quot;#第1章：无法连接虚拟机排错&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/categories/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/tags/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>命令提示符与格式、命令快捷键</title>
+    <link href="http://ww.lsk.cool/2020/05/01/ming-ling-ti-shi-fu-yu-ge-shi-ming-ling-kuai-jie-jian/"/>
+    <id>http://ww.lsk.cool/2020/05/01/ming-ling-ti-shi-fu-yu-ge-shi-ming-ling-kuai-jie-jian/</id>
+    <published>2020-05-01T11:57:23.000Z</published>
+    <updated>2020-05-01T11:18:11.605Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;1-命令提示符&quot;&gt;&lt;a href=&quot;#1-命令提示符&quot; class=&quot;headerlink&quot; title=&quot;1 .命令提示符&quot;&gt;&lt;/a&gt;1 .命令提示符&lt;/h4&gt;&lt;p&gt;[root@oldboyedu
+        
+      
+    
+    </summary>
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/categories/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/tags/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>创建新的虚拟机及CentOS7.5安装过程</title>
+    <link href="http://ww.lsk.cool/2020/05/01/chuang-jian-xin-de-xu-ni-ji-ji-centos7.5-an-zhuang-guo-cheng/"/>
+    <id>http://ww.lsk.cool/2020/05/01/chuang-jian-xin-de-xu-ni-ji-ji-centos7.5-an-zhuang-guo-cheng/</id>
+    <published>2020-05-01T10:57:23.000Z</published>
+    <updated>2020-05-01T10:57:07.571Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;1-创建新的虚拟机&quot;&gt;&lt;a href=&quot;#1-创建新的虚拟机&quot; class=&quot;headerlink&quot; title=&quot;1 .创建新的虚拟机&quot;&gt;&lt;/a&gt;1 .创建新的虚拟机&lt;/h4&gt;&lt;p&gt;​   
+        
+      
+    
+    </summary>
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/categories/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/tags/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux系统介绍</title>
+    <link href="http://ww.lsk.cool/2020/05/01/linux-xi-tong-jie-shao/"/>
+    <id>http://ww.lsk.cool/2020/05/01/linux-xi-tong-jie-shao/</id>
+    <published>2020-05-01T09:48:23.000Z</published>
+    <updated>2020-05-01T09:53:25.711Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;1-Linux简介-什么是操作系统&quot;&gt;&lt;a href=&quot;#1-Linux简介-什么是操作系统&quot; class=&quot;headerlink&quot; title=&quot;1 .Linux简介 什么是操作系统&quot;&gt;&lt;/a&gt;1 .Linux简介
+        
+      
+    
+    </summary>
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/categories/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/tags/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机硬件与组成原理</title>
+    <link href="http://ww.lsk.cool/2020/05/01/ji-suan-ji-ying-jian-yu-zu-cheng-yuan-li/"/>
+    <id>http://ww.lsk.cool/2020/05/01/ji-suan-ji-ying-jian-yu-zu-cheng-yuan-li/</id>
+    <published>2020-05-01T09:19:23.000Z</published>
+    <updated>2020-05-01T09:35:45.551Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;第一章：服务器硬件&quot;&gt;&lt;a href=&quot;#第一章：服务器硬件&quot; class=&quot;headerlink&quot; title=&quot;第一章：服务器硬件&quot;&gt;&lt;/a&gt;第一章：服务器硬件&lt;/h2&gt;&lt;p&gt;1.1服务器种类&lt;/p&gt;
+&lt;p&gt;  1）硬件服务器&lt;/p&gt;
+&lt;p&gt; 
+        
+      
+    
+    </summary>
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/categories/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/tags/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://ww.lsk.cool/2020/05/01/mo-ban/"/>
+    <id>http://ww.lsk.cool/2020/05/01/mo-ban/</id>
+    <published>2020-04-30T16:00:00.000Z</published>
+    <updated>2020-05-01T12:36:51.213Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="Linux网络基础" scheme="http://ww.lsk.cool/categories/Linux%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Linux网络基础" scheme="http://ww.lsk.cool/tags/Linux%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>/etc网卡配置文件、运行级别、二进制安装</title>
+    <link href="http://ww.lsk.cool/2020/05/01/etc-wang-qia-pei-zhi-wen-jian-yun-xing-ji-bie-er-jin-zhi-an-zhuang/"/>
+    <id>http://ww.lsk.cool/2020/05/01/etc-wang-qia-pei-zhi-wen-jian-yun-xing-ji-bie-er-jin-zhi-an-zhuang/</id>
+    <published>2020-04-30T16:00:00.000Z</published>
+    <updated>2020-05-01T11:22:13.536Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;第一章：网卡配置文件&quot;&gt;&lt;a href=&quot;#第一章：网卡配置文件&quot; class=&quot;headerlink&quot; title=&quot;第一章：网卡配置文件&quot;&gt;&lt;/a&gt;第一章：网卡配置文件&lt;/h3&gt;&lt;h4
+        
+      
+    
+    </summary>
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/categories/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/tags/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>日志文件、cpu查看与优化$PS1</title>
+    <link href="http://ww.lsk.cool/2020/05/01/ri-zhi-wen-jian-cpu-cha-kan-yu-you-hua-ps1/"/>
+    <id>http://ww.lsk.cool/2020/05/01/ri-zhi-wen-jian-cpu-cha-kan-yu-you-hua-ps1/</id>
+    <published>2020-04-30T16:00:00.000Z</published>
+    <updated>2020-05-01T11:26:24.935Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;第一章：Linux-日志文件&quot;&gt;&lt;a href=&quot;#第一章：Linux-日志文件&quot; class=&quot;headerlink&quot; title=&quot;第一章：Linux 日志文件&quot;&gt;&lt;/a&gt;第一章：Linux 日志文件&lt;/h3&gt;&lt;h4
+        
+      
+    
+    </summary>
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/categories/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/tags/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>yum 源、selinux 防火墙、firewalld 防火墙、字符集</title>
+    <link href="http://ww.lsk.cool/2020/05/01/yum-yuan-selinux-fang-huo-qiang-firewalld-fang-huo-qiang-zi-fu-ji/"/>
+    <id>http://ww.lsk.cool/2020/05/01/yum-yuan-selinux-fang-huo-qiang-firewalld-fang-huo-qiang-zi-fu-ji/</id>
+    <published>2020-04-30T16:00:00.000Z</published>
+    <updated>2020-05-01T11:30:51.070Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;第一章：yum-源&quot;&gt;&lt;a href=&quot;#第一章：yum-源&quot; class=&quot;headerlink&quot; title=&quot;第一章：yum 源&quot;&gt;&lt;/a&gt;第一章：yum 源&lt;/h3&gt;&lt;h4
+        
+      
+    
+    </summary>
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/categories/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/tags/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>特殊符号、别名</title>
+    <link href="http://ww.lsk.cool/2020/05/01/te-shu-fu-hao-bie-ming/"/>
+    <id>http://ww.lsk.cool/2020/05/01/te-shu-fu-hao-bie-ming/</id>
+    <published>2020-04-30T16:00:00.000Z</published>
+    <updated>2020-05-01T11:34:07.534Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;​     .      代表当前的目录&lt;/p&gt;
+&lt;p&gt;​     ..      代表上一级目录&lt;/p&gt;
+&lt;p&gt;​     #     注释 不生效的内容 shell编程的第一行有用  root用户提示符&lt;/p&gt;
+&lt;p&gt;​     ~    
+        
+      
+    
+    </summary>
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/categories/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/tags/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VIM编辑器和linux目录结构、光驱挂载</title>
+    <link href="http://ww.lsk.cool/2020/05/01/vim-bian-ji-qi-he-linux-mu-lu-jie-gou-guang-qu-gua-zai/"/>
+    <id>http://ww.lsk.cool/2020/05/01/vim-bian-ji-qi-he-linux-mu-lu-jie-gou-guang-qu-gua-zai/</id>
+    <published>2020-04-30T16:00:00.000Z</published>
+    <updated>2020-05-01T11:39:19.680Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;第一章：vim-编辑器-vi&quot;&gt;&lt;a href=&quot;#第一章：vim-编辑器-vi&quot; class=&quot;headerlink&quot; title=&quot;第一章：vim 编辑器 vi&quot;&gt;&lt;/a&gt;第一章：vim 编辑器 vi&lt;/h3&gt;&lt;p&gt;
+        
+      
+    
+    </summary>
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/categories/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/tags/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux 文件类型、硬软链接</title>
+    <link href="http://ww.lsk.cool/2020/05/01/linux-wen-jian-lei-xing-ying-ruan-lian-jie/"/>
+    <id>http://ww.lsk.cool/2020/05/01/linux-wen-jian-lei-xing-ying-ruan-lian-jie/</id>
+    <published>2020-04-30T16:00:00.000Z</published>
+    <updated>2020-05-01T11:41:59.984Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;33575001&lt;/th&gt;
+&lt;th&gt;-&lt;/th&gt;
+&lt;th&gt;rw-r–r–&lt;/th&gt;
+&lt;th&gt;.&lt;/th&gt;
+&lt;th&gt;1&lt;/th&gt;
+&lt;th&gt;root&lt;/th&gt;
+&lt;th&gt;root&lt;/th&gt;
+&lt;th&gt;18&lt;/th&gt;
+&lt;th&gt;12月 12
+        
+      
+    
+    </summary>
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/categories/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/tags/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>find 查找文件、打包压缩</title>
+    <link href="http://ww.lsk.cool/2020/05/01/find-cha-zhao-wen-jian-da-bao-ya-suo/"/>
+    <id>http://ww.lsk.cool/2020/05/01/find-cha-zhao-wen-jian-da-bao-ya-suo/</id>
+    <published>2020-04-30T16:00:00.000Z</published>
+    <updated>2020-05-01T11:45:25.468Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;1-find的格式：&quot;&gt;&lt;a href=&quot;#1-find的格式：&quot; class=&quot;headerlink&quot; title=&quot;1 .find的格式：&quot;&gt;&lt;/a&gt;1 .find的格式：&lt;/h4&gt;&lt;p&gt;​         find 在哪里找 -类型 f -名字
+        
+      
+    
+    </summary>
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/categories/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/tags/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>正则grep与扩展正则egrep查找</title>
+    <link href="http://ww.lsk.cool/2020/05/01/zheng-ze-grep-yu-kuo-zhan-zheng-ze-egrep-cha-zhao/"/>
+    <id>http://ww.lsk.cool/2020/05/01/zheng-ze-grep-yu-kuo-zhan-zheng-ze-egrep-cha-zhao/</id>
+    <published>2020-04-30T16:00:00.000Z</published>
+    <updated>2020-05-01T11:48:16.066Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;1-什么是正则表达式&quot;&gt;&lt;a href=&quot;#1-什么是正则表达式&quot; class=&quot;headerlink&quot; title=&quot;1  .什么是正则表达式&quot;&gt;&lt;/a&gt;1  .什么是正则表达式&lt;/h4&gt;&lt;p&gt; 1）
+        
+      
+    
+    </summary>
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/categories/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/tags/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>三剑客中的sed匹配</title>
+    <link href="http://ww.lsk.cool/2020/05/01/san-jian-ke-zhong-de-sed-pi-pei/"/>
+    <id>http://ww.lsk.cool/2020/05/01/san-jian-ke-zhong-de-sed-pi-pei/</id>
+    <published>2020-04-30T16:00:00.000Z</published>
+    <updated>2020-05-01T11:50:45.217Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;sed  替换 查找内容&lt;/p&gt;
+&lt;h4 id=&quot;1-格式&quot;&gt;&lt;a href=&quot;#1-格式&quot; class=&quot;headerlink&quot; title=&quot;1 .格式:&quot;&gt;&lt;/a&gt;1 .格式:&lt;/h4&gt;&lt;p&gt;​       sed ‘模式 动作’ file&lt;/p&gt;
+&lt;p&gt;​    
+        
+      
+    
+    </summary>
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/categories/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/tags/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>三剑客老大awk</title>
+    <link href="http://ww.lsk.cool/2020/05/01/san-jian-ke-lao-da-awk/"/>
+    <id>http://ww.lsk.cool/2020/05/01/san-jian-ke-lao-da-awk/</id>
+    <published>2020-04-30T16:00:00.000Z</published>
+    <updated>2020-05-01T11:53:08.433Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;1-1-awk的格式&quot;&gt;&lt;a href=&quot;#1-1-awk的格式&quot; class=&quot;headerlink&quot; title=&quot;1.1 awk的格式&quot;&gt;&lt;/a&gt;1.1 awk的格式&lt;/h4&gt;&lt;p&gt;   awk ‘找谁{干啥}’ passwd.bak&lt;/p&gt;
+&lt;p&gt;  
+        
+      
+    
+    </summary>
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/categories/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/tags/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>抓包方式和网络常用命令</title>
+    <link href="http://ww.lsk.cool/2020/05/01/zhua-bao-fang-shi-he-wang-luo-chang-yong-ming-ling/"/>
+    <id>http://ww.lsk.cool/2020/05/01/zhua-bao-fang-shi-he-wang-luo-chang-yong-ming-ling/</id>
+    <published>2020-04-30T16:00:00.000Z</published>
+    <updated>2020-05-01T13:07:01.558Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;第一章：抓包方式&quot;&gt;&lt;a href=&quot;#第一章：抓包方式&quot; class=&quot;headerlink&quot; title=&quot;第一章：抓包方式&quot;&gt;&lt;/a&gt;第一章：抓包方式&lt;/h3&gt;&lt;h4
+        
+      
+    
+    </summary>
+    
+      <category term="Linux网络基础" scheme="http://ww.lsk.cool/categories/Linux%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Linux网络基础" scheme="http://ww.lsk.cool/tags/Linux%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开机流程、用户管理</title>
+    <link href="http://ww.lsk.cool/2020/05/01/kai-ji-liu-cheng-yong-hu-guan-li/"/>
+    <id>http://ww.lsk.cool/2020/05/01/kai-ji-liu-cheng-yong-hu-guan-li/</id>
+    <published>2020-04-30T16:00:00.000Z</published>
+    <updated>2020-05-01T11:56:27.007Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;1-开机流程面试题&quot;&gt;&lt;a href=&quot;#1-开机流程面试题&quot; class=&quot;headerlink&quot; title=&quot;1  .开机流程面试题&quot;&gt;&lt;/a&gt;1  .开机流程面试题&lt;/h4&gt;&lt;p&gt;​   
+        
+      
+    
+    </summary>
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/categories/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/tags/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>批量创建用户</title>
+    <link href="http://ww.lsk.cool/2020/05/01/pi-liang-chuang-jian-yong-hu/"/>
+    <id>http://ww.lsk.cool/2020/05/01/pi-liang-chuang-jian-yong-hu/</id>
+    <published>2020-04-30T16:00:00.000Z</published>
+    <updated>2020-05-01T11:58:19.003Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;1  .sed方式批量创建test01..test10的用户&lt;/p&gt;
+&lt;p&gt;   例子：echo test{01..10}|xargs -n1|sed -r ‘s#(.*)#useradd \1#g’|bash&lt;/p&gt;
+&lt;p&gt;   sed
+        
+      
+    
+    </summary>
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/categories/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/tags/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+</feed>
