@@ -1153,20 +1153,24 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/05/01/zhua-bao-fang-shi-he-wang-luo-chang-yong-ming-ling/">
+                <a href="/2020/05/01/san-jian-ke-zhong-de-sed-pi-pei/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/46.jpg" class="responsive-img" alt="抓包方式和网络常用命令">
+                        <img src="/medias/featureimages/34.jpg" class="responsive-img" alt="三剑客中的sed匹配">
                         
-                        <span class="card-title">抓包方式和网络常用命令</span>
+                        <span class="card-title">三剑客中的sed匹配</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            第一章：抓包方式1  .tcpdump 支持针对网络层、协议、主机、网络或端口的过滤，并提供and、or、not等逻辑语句来帮助你去掉无用的信息常用参数： -i               #监听哪一个网卡 
-​              
+                            sed  替换 查找内容
+1 .格式:​       sed ‘模式 动作’ file
+​       sed ‘找谁 干啥’ file
+​        -n     取消默认输出
+​        -r    支持扩展正则
+​    s
                         
                     </div>
                     <div class="publish-info">
@@ -1177,8 +1181,8 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Linux网络基础/" class="post-category" target="_blank">
-                                    Linux网络基础
+                            <a href="/categories/Linux基础/" class="post-category" target="_blank">
+                                    Linux基础
                                 </a>
                             
                             
@@ -1188,8 +1192,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Linux网络基础/" target="_blank">
-                        <span class="chip bg-color">Linux网络基础</span>
+                    <a href="/tags/Linux基础/" target="_blank">
+                        <span class="chip bg-color">Linux基础</span>
                     </a>
                     
                 </div>
@@ -1203,21 +1207,37 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/01/pi-liang-chuang-jian-yong-hu/">
+                <a href="/2020/05/01/ming-ling-zong-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/45.jpg" class="responsive-img" alt="批量创建用户">
+                        <img src="/medias/featureimages/58.jpg" class="responsive-img" alt="命令总结">
                         
-                        <span class="card-title">批量创建用户</span>
+                        <span class="card-title">命令总结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1  .sed方式批量创建test01..test10的用户
-   例子：echo test{01..10}|xargs -n1|sed -r ‘s#(.*)#useradd \1#g’|bash
-   sed 方式批量创建test01..
+                            第1章：路径
+   路径分为两种：
+
+
+
+路径分类
+命令
+生活例子
+
+
+
+相对路径
+hosts oldboy.txt passwd
+隔壁305 隔壁304
+
+
+绝对路径
+/etc/oldboy /etc/passwd
+地球/亚洲/中国/广东
                         
                     </div>
                     <div class="publish-info">
