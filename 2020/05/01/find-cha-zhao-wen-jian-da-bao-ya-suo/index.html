@@ -1071,19 +1071,21 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/05/01/ri-zhi-wen-jian-cpu-cha-kan-yu-you-hua-ps1/">
+                <a href="/2020/05/01/pi-liang-chuang-jian-yong-hu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/40.jpg" class="responsive-img" alt="日志文件、cpu查看与优化$PS1">
+                        <img src="/medias/featureimages/40.jpg" class="responsive-img" alt="批量创建用户">
                         
-                        <span class="card-title">日志文件、cpu查看与优化$PS1</span>
+                        <span class="card-title">批量创建用户</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            第一章：Linux 日志文件1）/var variable    变化的、日志文件/var/log/messages  日志信息 记录了系统运行的记录/var/log/secure    系统的安全日志​      如果安全日志出现Fail
+                            1  .sed方式批量创建test01..test10的用户
+   例子：echo test{01..10}|xargs -n1|sed -r ‘s#(.*)#useradd \1#g’|bash
+   sed 方式批量创建test01..
                         
                     </div>
                     <div class="publish-info">
@@ -1120,22 +1122,47 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/01/zheng-ze-grep-yu-kuo-zhan-zheng-ze-egrep-cha-zhao/">
+                <a href="/2020/05/01/linux-wen-jian-lei-xing-ying-ruan-lian-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/42.jpg" class="responsive-img" alt="正则grep与扩展正则egrep查找">
+                        <img src="/medias/featureimages/49.jpg" class="responsive-img" alt="Linux 文件类型、硬软链接">
                         
-                        <span class="card-title">正则grep与扩展正则egrep查找</span>
+                        <span class="card-title">Linux 文件类型、硬软链接</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1  .什么是正则表达式 1） 正则表达式就是为了处理大量的文字|文本|字符串而定义的一套规则和方法。
-2）通过定义的这些特殊符号的辅助，系统管理员就可以快速过滤，替换或输出需要的字符串。
-3）Linux正则表达式一般以行为单位处理的。
-简
+                            
+
+
+33575001
+-
+rw-r–r–
+.
+1
+root
+root
+18
+12月 12 20:37
+bash.sh
+
+
+
+inode
+文件的类型
+文件的权限
+selinux
+硬链接个数
+属主
+属组
+文    件的大小
+时间
+文件名
+
+
+
                         
                     </div>
                     <div class="publish-info">
