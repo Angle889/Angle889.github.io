@@ -1159,24 +1159,21 @@ selinux
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/05/01/ding-shi-ren-wu/">
+                <a href="/2020/05/01/pi-liang-chuang-jian-yong-hu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/32.jpg" class="responsive-img" alt="定时任务">
+                        <img src="/medias/featureimages/40.jpg" class="responsive-img" alt="批量创建用户">
                         
-                        <span class="card-title">定时任务</span>
+                        <span class="card-title">批量创建用户</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1  .定时任务：某个时间做某件事情​    Linux中定时任务：
-​      1）备份
-​      2）tar  打包-发送到备份服务器
-​      3）统计数据
-2  .什么时间使用定时任务打包?​      业务低谷期
-3  
+                            1  .sed方式批量创建test01..test10的用户
+   例子：echo test{01..10}|xargs -n1|sed -r ‘s#(.*)#useradd \1#g’|bash
+   sed 方式批量创建test01..
                         
                     </div>
                     <div class="publish-info">
@@ -1213,21 +1210,27 @@ selinux
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/01/pi-liang-chuang-jian-yong-hu/">
+                <a href="/2020/05/01/kai-ji-liu-cheng-yong-hu-guan-li/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/40.jpg" class="responsive-img" alt="批量创建用户">
+                        <img src="/medias/featureimages/34.jpg" class="responsive-img" alt="开机流程、用户管理">
                         
-                        <span class="card-title">批量创建用户</span>
+                        <span class="card-title">开机流程、用户管理</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1  .sed方式批量创建test01..test10的用户
-   例子：echo test{01..10}|xargs -n1|sed -r ‘s#(.*)#useradd \1#g’|bash
-   sed 方式批量创建test01..
+                            1  .开机流程面试题​    1.描述linux系统从开机到登陆界面的启动过程（记时2分钟）
+解答：
+简述：
+1）开机BIOS自检
+2）MBR引导
+3）grub引导菜单
+4）加载内核kernel
+5）启动init进程
+6）读取initta
                         
                     </div>
                     <div class="publish-info">

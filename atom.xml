@@ -175,11 +175,11 @@
   </entry>
   
   <entry>
-    <title>开机流程、用户管理</title>
-    <link href="http://ww.lsk.cool/2020/05/01/kai-ji-liu-cheng-yong-hu-guan-li/"/>
-    <id>http://ww.lsk.cool/2020/05/01/kai-ji-liu-cheng-yong-hu-guan-li/</id>
+    <title>定时任务</title>
+    <link href="http://ww.lsk.cool/2020/05/01/ding-shi-ren-wu/"/>
+    <id>http://ww.lsk.cool/2020/05/01/ding-shi-ren-wu/</id>
     <published>2020-04-30T16:00:00.000Z</published>
-    <updated>2020-05-01T11:56:27.007Z</updated>
+    <updated>2020-05-01T12:03:25.869Z</updated>
     
     <summary type="html">
     
@@ -187,7 +187,33 @@
       
         
         
-          &lt;h4 id=&quot;1-开机流程面试题&quot;&gt;&lt;a href=&quot;#1-开机流程面试题&quot; class=&quot;headerlink&quot; title=&quot;1  .开机流程面试题&quot;&gt;&lt;/a&gt;1  .开机流程面试题&lt;/h4&gt;&lt;p&gt;​   
+          &lt;h4 id=&quot;1-定时任务：某个时间做某件事情&quot;&gt;&lt;a href=&quot;#1-定时任务：某个时间做某件事情&quot; class=&quot;headerlink&quot; title=&quot;1  .定时任务：某个时间做某件事情&quot;&gt;&lt;/a&gt;1  .定时任务：某个时间做某件事情&lt;/h4&gt;&lt;p&gt;​   
+        
+      
+    
+    </summary>
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/categories/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/tags/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VIM编辑器和linux目录结构、光驱挂载</title>
+    <link href="http://ww.lsk.cool/2020/05/01/vim-bian-ji-qi-he-linux-mu-lu-jie-gou-guang-qu-gua-zai/"/>
+    <id>http://ww.lsk.cool/2020/05/01/vim-bian-ji-qi-he-linux-mu-lu-jie-gou-guang-qu-gua-zai/</id>
+    <published>2020-04-30T16:00:00.000Z</published>
+    <updated>2020-05-01T11:39:19.680Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;第一章：vim-编辑器-vi&quot;&gt;&lt;a href=&quot;#第一章：vim-编辑器-vi&quot; class=&quot;headerlink&quot; title=&quot;第一章：vim 编辑器 vi&quot;&gt;&lt;/a&gt;第一章：vim 编辑器 vi&lt;/h3&gt;&lt;p&gt;
         
       
     
@@ -227,11 +253,11 @@
   </entry>
   
   <entry>
-    <title>find 查找文件、打包压缩</title>
-    <link href="http://ww.lsk.cool/2020/05/01/find-cha-zhao-wen-jian-da-bao-ya-suo/"/>
-    <id>http://ww.lsk.cool/2020/05/01/find-cha-zhao-wen-jian-da-bao-ya-suo/</id>
+    <title>Linux  12位权限体系</title>
+    <link href="http://ww.lsk.cool/2020/05/01/linux-12-wei-quan-xian-ti-xi/"/>
+    <id>http://ww.lsk.cool/2020/05/01/linux-12-wei-quan-xian-ti-xi/</id>
     <published>2020-04-30T16:00:00.000Z</published>
-    <updated>2020-05-01T11:45:25.468Z</updated>
+    <updated>2020-05-01T12:01:26.518Z</updated>
     
     <summary type="html">
     
@@ -239,34 +265,7 @@
       
         
         
-          &lt;h4 id=&quot;1-find的格式：&quot;&gt;&lt;a href=&quot;#1-find的格式：&quot; class=&quot;headerlink&quot; title=&quot;1 .find的格式：&quot;&gt;&lt;/a&gt;1 .find的格式：&lt;/h4&gt;&lt;p&gt;​         find 在哪里找 -类型 f -名字
-        
-      
-    
-    </summary>
-    
-      <category term="Linux基础" scheme="http://ww.lsk.cool/categories/Linux%E5%9F%BA%E7%A1%80/"/>
-    
-    
-      <category term="Linux基础" scheme="http://ww.lsk.cool/tags/Linux%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>三剑客老大awk</title>
-    <link href="http://ww.lsk.cool/2020/05/01/san-jian-ke-lao-da-awk/"/>
-    <id>http://ww.lsk.cool/2020/05/01/san-jian-ke-lao-da-awk/</id>
-    <published>2020-04-30T16:00:00.000Z</published>
-    <updated>2020-05-01T11:53:08.433Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h4 id=&quot;1-1-awk的格式&quot;&gt;&lt;a href=&quot;#1-1-awk的格式&quot; class=&quot;headerlink&quot; title=&quot;1.1 awk的格式&quot;&gt;&lt;/a&gt;1.1 awk的格式&lt;/h4&gt;&lt;p&gt;   awk ‘找谁{干啥}’ passwd.bak&lt;/p&gt;
-&lt;p&gt;  
+          &lt;h3 id=&quot;第一章：前9位权限体系&quot;&gt;&lt;a href=&quot;#第一章：前9位权限体系&quot; class=&quot;headerlink&quot; title=&quot;第一章：前9位权限体系&quot;&gt;&lt;/a&gt;第一章：前9位权限体系&lt;/h3&gt;&lt;h4 id=&quot;1-RWX是什么？&quot;&gt;&lt;a
         
       
     
@@ -295,6 +294,33 @@
           &lt;p&gt;sed  替换 查找内容&lt;/p&gt;
 &lt;h4 id=&quot;1-格式&quot;&gt;&lt;a href=&quot;#1-格式&quot; class=&quot;headerlink&quot; title=&quot;1 .格式:&quot;&gt;&lt;/a&gt;1 .格式:&lt;/h4&gt;&lt;p&gt;​       sed ‘模式 动作’ file&lt;/p&gt;
 &lt;p&gt;​    
+        
+      
+    
+    </summary>
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/categories/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Linux基础" scheme="http://ww.lsk.cool/tags/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>三剑客老大awk</title>
+    <link href="http://ww.lsk.cool/2020/05/01/san-jian-ke-lao-da-awk/"/>
+    <id>http://ww.lsk.cool/2020/05/01/san-jian-ke-lao-da-awk/</id>
+    <published>2020-04-30T16:00:00.000Z</published>
+    <updated>2020-05-01T11:53:08.433Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;1-1-awk的格式&quot;&gt;&lt;a href=&quot;#1-1-awk的格式&quot; class=&quot;headerlink&quot; title=&quot;1.1 awk的格式&quot;&gt;&lt;/a&gt;1.1 awk的格式&lt;/h4&gt;&lt;p&gt;   awk ‘找谁{干啥}’ passwd.bak&lt;/p&gt;
+&lt;p&gt;  
         
       
     
@@ -365,32 +391,6 @@
   </entry>
   
   <entry>
-    <title>TCP11种状态和IP地址</title>
-    <link href="http://ww.lsk.cool/2020/05/01/tcp11-chong-zhuang-tai-he-ip-di-zhi/"/>
-    <id>http://ww.lsk.cool/2020/05/01/tcp11-chong-zhuang-tai-he-ip-di-zhi/</id>
-    <published>2020-04-30T16:00:00.000Z</published>
-    <updated>2020-05-01T13:00:20.879Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;第一章：TCP11种状态&quot;&gt;&lt;a href=&quot;#第一章：TCP11种状态&quot; class=&quot;headerlink&quot; title=&quot;第一章：TCP11种状态&quot;&gt;&lt;/a&gt;第一章：TCP11种状态&lt;/h3&gt;&lt;p&gt;   客户端&amp;gt;未连接前的状态 closed 初始化
-        
-      
-    
-    </summary>
-    
-      <category term="Linux网络基础" scheme="http://ww.lsk.cool/categories/Linux%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/"/>
-    
-    
-      <category term="Linux网络基础" scheme="http://ww.lsk.cool/tags/Linux%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
     <title>命令总结</title>
     <link href="http://ww.lsk.cool/2020/05/01/ming-ling-zong-jie/"/>
     <id>http://ww.lsk.cool/2020/05/01/ming-ling-zong-jie/</id>
@@ -418,11 +418,11 @@
   </entry>
   
   <entry>
-    <title>Linux  12位权限体系</title>
-    <link href="http://ww.lsk.cool/2020/05/01/linux-12-wei-quan-xian-ti-xi/"/>
-    <id>http://ww.lsk.cool/2020/05/01/linux-12-wei-quan-xian-ti-xi/</id>
+    <title>TCP11种状态和IP地址</title>
+    <link href="http://ww.lsk.cool/2020/05/01/tcp11-chong-zhuang-tai-he-ip-di-zhi/"/>
+    <id>http://ww.lsk.cool/2020/05/01/tcp11-chong-zhuang-tai-he-ip-di-zhi/</id>
     <published>2020-04-30T16:00:00.000Z</published>
-    <updated>2020-05-01T12:01:26.518Z</updated>
+    <updated>2020-05-01T13:00:20.879Z</updated>
     
     <summary type="html">
     
@@ -430,25 +430,25 @@
       
         
         
-          &lt;h3 id=&quot;第一章：前9位权限体系&quot;&gt;&lt;a href=&quot;#第一章：前9位权限体系&quot; class=&quot;headerlink&quot; title=&quot;第一章：前9位权限体系&quot;&gt;&lt;/a&gt;第一章：前9位权限体系&lt;/h3&gt;&lt;h4 id=&quot;1-RWX是什么？&quot;&gt;&lt;a
+          &lt;h3 id=&quot;第一章：TCP11种状态&quot;&gt;&lt;a href=&quot;#第一章：TCP11种状态&quot; class=&quot;headerlink&quot; title=&quot;第一章：TCP11种状态&quot;&gt;&lt;/a&gt;第一章：TCP11种状态&lt;/h3&gt;&lt;p&gt;   客户端&amp;gt;未连接前的状态 closed 初始化
         
       
     
     </summary>
     
-      <category term="Linux基础" scheme="http://ww.lsk.cool/categories/Linux%E5%9F%BA%E7%A1%80/"/>
+      <category term="Linux网络基础" scheme="http://ww.lsk.cool/categories/Linux%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/"/>
     
     
-      <category term="Linux基础" scheme="http://ww.lsk.cool/tags/Linux%E5%9F%BA%E7%A1%80/"/>
+      <category term="Linux网络基础" scheme="http://ww.lsk.cool/tags/Linux%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
-    <title>定时任务</title>
-    <link href="http://ww.lsk.cool/2020/05/01/ding-shi-ren-wu/"/>
-    <id>http://ww.lsk.cool/2020/05/01/ding-shi-ren-wu/</id>
+    <title>批量创建用户</title>
+    <link href="http://ww.lsk.cool/2020/05/01/pi-liang-chuang-jian-yong-hu/"/>
+    <id>http://ww.lsk.cool/2020/05/01/pi-liang-chuang-jian-yong-hu/</id>
     <published>2020-04-30T16:00:00.000Z</published>
-    <updated>2020-05-01T12:03:25.869Z</updated>
+    <updated>2020-05-01T11:58:19.003Z</updated>
     
     <summary type="html">
     
@@ -456,7 +456,9 @@
       
         
         
-          &lt;h4 id=&quot;1-定时任务：某个时间做某件事情&quot;&gt;&lt;a href=&quot;#1-定时任务：某个时间做某件事情&quot; class=&quot;headerlink&quot; title=&quot;1  .定时任务：某个时间做某件事情&quot;&gt;&lt;/a&gt;1  .定时任务：某个时间做某件事情&lt;/h4&gt;&lt;p&gt;​   
+          &lt;p&gt;1  .sed方式批量创建test01..test10的用户&lt;/p&gt;
+&lt;p&gt;   例子：echo test{01..10}|xargs -n1|sed -r ‘s#(.*)#useradd \1#g’|bash&lt;/p&gt;
+&lt;p&gt;   sed
         
       
     
@@ -507,11 +509,11 @@
   </entry>
   
   <entry>
-    <title>批量创建用户</title>
-    <link href="http://ww.lsk.cool/2020/05/01/pi-liang-chuang-jian-yong-hu/"/>
-    <id>http://ww.lsk.cool/2020/05/01/pi-liang-chuang-jian-yong-hu/</id>
+    <title>开机流程、用户管理</title>
+    <link href="http://ww.lsk.cool/2020/05/01/kai-ji-liu-cheng-yong-hu-guan-li/"/>
+    <id>http://ww.lsk.cool/2020/05/01/kai-ji-liu-cheng-yong-hu-guan-li/</id>
     <published>2020-04-30T16:00:00.000Z</published>
-    <updated>2020-05-01T11:58:19.003Z</updated>
+    <updated>2020-05-01T11:56:27.007Z</updated>
     
     <summary type="html">
     
@@ -519,9 +521,7 @@
       
         
         
-          &lt;p&gt;1  .sed方式批量创建test01..test10的用户&lt;/p&gt;
-&lt;p&gt;   例子：echo test{01..10}|xargs -n1|sed -r ‘s#(.*)#useradd \1#g’|bash&lt;/p&gt;
-&lt;p&gt;   sed
+          &lt;h4 id=&quot;1-开机流程面试题&quot;&gt;&lt;a href=&quot;#1-开机流程面试题&quot; class=&quot;headerlink&quot; title=&quot;1  .开机流程面试题&quot;&gt;&lt;/a&gt;1  .开机流程面试题&lt;/h4&gt;&lt;p&gt;​   
         
       
     
@@ -535,11 +535,11 @@
   </entry>
   
   <entry>
-    <title>搭配网络路由表</title>
-    <link href="http://ww.lsk.cool/2020/05/01/da-pei-wang-luo-lu-you-biao/"/>
-    <id>http://ww.lsk.cool/2020/05/01/da-pei-wang-luo-lu-you-biao/</id>
+    <title>抓包方式和网络常用命令</title>
+    <link href="http://ww.lsk.cool/2020/05/01/zhua-bao-fang-shi-he-wang-luo-chang-yong-ming-ling/"/>
+    <id>http://ww.lsk.cool/2020/05/01/zhua-bao-fang-shi-he-wang-luo-chang-yong-ming-ling/</id>
     <published>2020-04-30T16:00:00.000Z</published>
-    <updated>2020-05-01T12:43:30.026Z</updated>
+    <updated>2020-05-01T13:07:01.558Z</updated>
     
     <summary type="html">
     
@@ -547,9 +547,7 @@
       
         
         
-          &lt;p&gt;第一章：静态路由&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/medias/71.png&quot; alt&gt;&lt;/p&gt;
-&lt;h4 id=&quot;第一步：PC电脑IP配置&quot;&gt;&lt;a href=&quot;#第一步：PC电脑IP配置&quot; class=&quot;headerlink&quot;
+          &lt;h3 id=&quot;第一章：抓包方式&quot;&gt;&lt;a href=&quot;#第一章：抓包方式&quot; class=&quot;headerlink&quot; title=&quot;第一章：抓包方式&quot;&gt;&lt;/a&gt;第一章：抓包方式&lt;/h3&gt;&lt;h4
         
       
     
