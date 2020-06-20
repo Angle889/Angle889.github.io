@@ -1118,24 +1118,20 @@ rates：分别表示过去 2s 10s 40s 的平均流量
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/05/01/ding-shi-ren-wu/">
+                <a href="/2020/05/01/linux-12-wei-quan-xian-ti-xi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/38.jpg" class="responsive-img" alt="定时任务">
+                        <img src="/medias/featureimages/35.jpg" class="responsive-img" alt="Linux  12位权限体系">
                         
-                        <span class="card-title">定时任务</span>
+                        <span class="card-title">Linux  12位权限体系</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1  .定时任务：某个时间做某件事情​    Linux中定时任务：
-​      1）备份
-​      2）tar  打包-发送到备份服务器
-​      3）统计数据
-2  .什么时间使用定时任务打包?​      业务低谷期
-3  
+                            第一章：前9位权限体系1  .RWX是什么？​    R  （read）         读         可以看文件 （cat less more head tail）
+   W （write）        写         可以写
                         
                     </div>
                     <div class="publish-info">
@@ -1172,47 +1168,21 @@ rates：分别表示过去 2s 10s 40s 的平均流量
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/01/linux-wen-jian-lei-xing-ying-ruan-lian-jie/">
+                <a href="/2020/05/01/pi-liang-chuang-jian-yong-hu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/55.jpg" class="responsive-img" alt="Linux 文件类型、硬软链接">
+                        <img src="/medias/featureimages/46.jpg" class="responsive-img" alt="批量创建用户">
                         
-                        <span class="card-title">Linux 文件类型、硬软链接</span>
+                        <span class="card-title">批量创建用户</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-
-
-33575001
--
-rw-r–r–
-.
-1
-root
-root
-18
-12月 12 20:37
-bash.sh
-
-
-
-inode
-文件的类型
-文件的权限
-selinux
-硬链接个数
-属主
-属组
-文    件的大小
-时间
-文件名
-
-
-
+                            1  .sed方式批量创建test01..test10的用户
+   例子：echo test{01..10}|xargs -n1|sed -r ‘s#(.*)#useradd \1#g’|bash
+   sed 方式批量创建test01..
                         
                     </div>
                     <div class="publish-info">
@@ -1409,7 +1379,7 @@ selinux
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">42.7k</span>
+            <span class="white-color">42.3k</span>
             
 
             <br>
