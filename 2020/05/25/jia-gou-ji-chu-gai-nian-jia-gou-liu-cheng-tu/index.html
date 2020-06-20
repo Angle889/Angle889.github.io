@@ -4,15 +4,13 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="进程, rsync NFS sersync LNMP架构 linux三剑客 shell编程 DBA">
+    <meta name="keywords" content="架构基础概念、架构流程图, rsync NFS sersync LNMP架构 linux三剑客 shell编程 DBA">
     <meta name="baidu-site-verification" content="D6Cl8NLHeO">
     <meta name="google-site-verification" content="D6Cl8NLHeO">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="1  .文件被彻底删除
-​    1）硬链接为0
-​    2）进程调用为0
-   [root@alexlnb ~]#lsof |grep messages
-   abrt-watc  717     root  4r   REG     ">
+    <meta name="description" content="架构基础概念,架构流程图第一章:架构基础概念1.基础概念：1.什么是项目: 盖一栋楼 一间屋子 类似于手机的APP 可以算做一个项目 一个网站-项目
+2.什么是架构：运行或维护一个项目使用的服务器
+3.什么是集群：为了解决项目运行过程中出现">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +18,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>进程 | Angle的博客</title>
+    <title>架构基础概念、架构流程图 | Angle的博客</title>
     <link rel="icon" type="image/png" href="/boke.JPG">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -330,13 +328,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/40.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/43.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        进程
+                        架构基础概念、架构流程图
                     </div>
                 </div>
             </div>
@@ -447,8 +445,8 @@
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/Linux基础/" target="_blank">
-                            <span class="chip bg-color">Linux基础</span>
+                        <a href="/tags/架构/" target="_blank">
+                            <span class="chip bg-color">架构</span>
                         </a>
                         
                     </div>
@@ -459,8 +457,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/Linux基础/" class="post-category" target="_blank">
-                            Linux基础
+                        <a href="/categories/架构/" class="post-category" target="_blank">
+                            架构
                         </a>
                         
                     </div>
@@ -471,7 +469,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-05-01
+                    2020-05-25
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -485,14 +483,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.8k
+                    418
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    15 分
+                    1 分
                 </div>
                 
                 
@@ -508,412 +506,39 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>1  .文件被彻底删除</p>
-<p>​    1）硬链接为0</p>
-<p>​    2）进程调用为0</p>
-<p>   [root@alexlnb ~]#lsof |grep messages</p>
-<p>   abrt-watc  717     root  4r   REG        8,3  2759937  1095001 /var/log/messages (deleted)</p>
-<p>systemctl status rsyslog.service             查看日志服务状态</p>
-<p>systemctl restart rsyslog                         重启日志服务 </p>
-<p>netstat -tnulp                                            查看端口</p>
-<p>kill -9 ip号                                                  直接干掉那个进程</p>
-<p>   lsof -i :3306                                             列出谁在使用某个端口</p>
-<p>   ps axuf                                                      状态信息栏</p>
-<p>   a                 表示所有进程</p>
-<p>   x                 不以终端区分的所有进程</p>
-<p>   u                 显示用户</p>
-<p>   f                  以树状显示结构</p>
-<p>   R                 运行状态</p>
-<p>   S                  可中断睡眠 当进程优先级高的抢占资源时 可中断此进程</p>
-<p>   T                 进程被暂停</p>
-<p>   D                 不可中断进程 当进程优先级高的抢占资源时 不可中断此进程</p>
-<p>   Z                  僵尸进程</p>
-<p>   Ss                代表父进程</p>
-<p>   S&lt;                进程优先级高 Ss&lt;</p>
-<p>   SN               进程优先级低</p>
-<p>   R+                进程在前台运行</p>
-<p>   S&lt;sl</p>
-<p>   ctrl+z          暂停进程</p>
-<p>   top命令 和 w 命令相同?</p>
-<p>   top - 11:58:35 up 1 day, 40 min, 3 users, load average: 0.23, 0.16, 0.10</p>
-<p>进程基本概述  </p>
-<p>监控进程状态</p>
-<p>管理进程状态</p>
-<p>管理后台进程</p>
-<p>进程的优先级</p>
-<p>系统平均负载</p>
-<h3 id="一、进程基本概述"><a href="#一、进程基本概述" class="headerlink" title="一、进程基本概述"></a>一、进程基本概述</h3><p>1.什么是进程</p>
-<p>​     当我们运行一个程序，那么我们将运行的程序叫进程</p>
-<p>​     PS1：当程序运行为进程后，系统会为该进程分配内存，以及进程运行的身份和权限</p>
-<p>​     PS2：在进程运行的过程中，服务器上会有各种状态来表示当前进程的指标信息</p>
-<p>2.程序和进程的区别</p>
-<p>​     程序是数据和指令的集合，是一个静态的概念，比如/bin/ls /bin/cp 等二进制文件，同时程序可以长期存在系统中</p>
-<p>​     进程是程序运行的过程，是一个动态的概念，进程是存在生命周期概念的，也就是说进程随着程序的终止而销毁，不会永久存在系统中</p>
-<p>3.程序的生命周期</p>
-<p>一个对象从无到有、从有到无过程称为生命周期（就绪态 执行态 僵死态 停止态 睡眠态）</p>
-<p><img src="/medias/63.png" alt></p>
-<p>当父进程接收到任务调度时，会通过fock派生子进程来处理，子进程会继承父进程衣钵（相当于完全复制了一份父进程的信息）</p>
-<p>\1.   子进程在处理任务代码时，父进程会进入等待状态中</p>
-<p>\2.   子进程在处理任务代码后，会执行退出，然后唤醒父进程来回收子进程的资源</p>
-<p>\3.   如果子进程在处理任务过程中，父进程退出，子进程没有退出，子进程没有被父进程管理，则变为僵尸进程</p>
-<p>\4.   每个进程都有自己的PID号，子进程称为PPID</p>
-<h3 id="二、监控进程状态"><a href="#二、监控进程状态" class="headerlink" title="二、监控进程状态"></a>二、监控进程状态</h3><p>程序在运行后，我们需要了解进程的运行状态，查看进程的状态分为:静态和动态两种方式</p>
-<p>\1.   使用ps命令查看当前的进程状态（静态）</p>
-<p>ps –auxf常用组合方式查看进程、PID、占用cpu百分比，占用内存百分比，状态、执行的命令等</p>
-<p>-a显示所有终端机下执行的进程，除了阶段作业领导者之外</p>
-<p>  -u以用户为主的格式来显示进程状况</p>
-<p>-x显示所有进程，不以终端机来区分</p>
-<p>  -f用ASCII字符显示树状结构，表达进程间的相互关系</p>
-<p><img src="/medias/64.png" alt></p>
-<table>
-<thead>
-<tr>
-<th><strong>标志</strong></th>
-<th><strong>意义</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>USER</td>
-<td>该 process 属于那个使用者账号的</td>
-</tr>
-<tr>
-<td>PID</td>
-<td>该 process 的号码</td>
-</tr>
-<tr>
-<td>%CPU</td>
-<td>该 process 使用掉的 CPU 资源百分比</td>
-</tr>
-<tr>
-<td>%MEM</td>
-<td>该 process 所占用的物理内存百分比</td>
-</tr>
-<tr>
-<td>VSZ</td>
-<td>该 process 使用掉的虚拟内存量 (Kbytes)</td>
-</tr>
-<tr>
-<td>RSS</td>
-<td>该 process 占用的固定的内存量 (Kbytes)</td>
-</tr>
-<tr>
-<td>TTY</td>
-<td>该 process 是在那个终端机上面运作，若与终端机无关，则显示 ?，另外， tty1-tty6 是本机上面的登入者程序，若为 pts/0 等等的，则表示为由网络连接进主机的程序。</td>
-</tr>
-<tr>
-<td>STAT</td>
-<td>该程序目前的状态</td>
-</tr>
-<tr>
-<td>START</td>
-<td>该 process 被触发启动的时间</td>
-</tr>
-<tr>
-<td>TIME</td>
-<td>该 process 实际使用 CPU 运作的时间</td>
-</tr>
-<tr>
-<td>COMMAND</td>
-<td>该程序的实际指令[]内核态进程  无[] 用户进程</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th>STAT基本状态</th>
-<th>描述</th>
-<th>STAT状态+符号</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>R</td>
-<td>进程运行</td>
-<td>s</td>
-<td>进程是控制进程， Ss进程的领导者，父进程</td>
-</tr>
-<tr>
-<td>S</td>
-<td>可中断睡眠</td>
-<td>&lt;</td>
-<td>进程运行在高优先级上，S&lt;优先级较高的进程</td>
-</tr>
-<tr>
-<td>T</td>
-<td>进程被暂停</td>
-<td>N</td>
-<td>进程运行在低优先级上，SN优先级较低的进程</td>
-</tr>
-<tr>
-<td>D</td>
-<td>不可中断进程</td>
-<td>+</td>
-<td>当前进程运行在前台，R+该表示进程在前台运行</td>
-</tr>
-<tr>
-<td>Z</td>
-<td>僵尸进程</td>
-<td>l</td>
-<td>进程是多线程的，Sl表示进程是以线程方式运行</td>
-</tr>
-</tbody></table>
-<p>案例1：</p>
-<p>1）在终端1上运行vim</p>
-<p>[root@lzy ~]# vim test</p>
-<p>2）在终端2上运行ps命令查看状态</p>
-<p>[root@lzy ~]# ps axu|grep test #S表示可中断睡眠模式 +表示前台运行</p>
-<p>root   14240 0.1 0.5 151868 5676 pts/1  S+  10:48  0:00 vim test</p>
-<p>root   14271 0.0 0.0 112660  968 pts/2  R+  10:48  0:00 grep –color=auto test</p>
-<p>3）在终端1上挂起vim命令按下: ctrl+z</p>
-<p>4) 回到终端2再次运行ps命令查看状态</p>
-<p>root@lzy ~]# ps axu|grep test  # T表示停止状态  </p>
-<p>root   14240 0.0 0.5 151868 5676 pts/1  T  10:48  0:00 vim test</p>
-<p>root   14279 0.0 0.0 112660  964 pts/2  R+  10:51  0:00 grep –color=auto test</p>
-<p>案例2</p>
-<p>PS命令查看不可中断状态进程</p>
-<p>使用tar打包文件时，可以通过中断不断查看状态，由S+,R,D+来回切换</p>
-<p>[root@lzy ~]# ps axu|grep tar|grep -v grep</p>
-<p>root   14289 2.6 0.1 124268 1888 pts/2  S+  10:56  0:01 tar zcf etc.tar.gz /etc/ /usr/ /var</p>
-<p>[root@lzy ~]# ps axu|grep tar|grep -v grep</p>
-<p>root   14289 2.7 0.2 124380 2240 pts/2  R+  10:56  0:01 tar zcf etc.tar.gz /etc/ /usr/ /var</p>
-<p> [root@lzy ~]# ps axu|grep tar|grep -v grep</p>
-<p>root   14289 2.9 0.2 124916 2724 pts/2  D+  10:56  0:01 tar zcf etc.tar.gz /etc/ /usr/ /var</p>
-<p>\2.   使用top命令查看当前的进程状态 动态</p>
-<p><img src="/medias/65.png" alt></p>
-<table>
-<thead>
-<tr>
-<th><strong>任务</strong></th>
-<th><strong>含义</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Tasks:73 total</td>
-<td>当前进程的总数</td>
-</tr>
-<tr>
-<td>2 running</td>
-<td>正在运行的进程数</td>
-</tr>
-<tr>
-<td>71 sleeping</td>
-<td>睡眠的进程数</td>
-</tr>
-<tr>
-<td>0 stopped</td>
-<td>停止的进程数</td>
-</tr>
-<tr>
-<td>0 zombie</td>
-<td>僵尸进程数</td>
-</tr>
-<tr>
-<td>%Cpu(s):   49.2 us</td>
-<td>系统用户进程使用CPU百分比</td>
-</tr>
-<tr>
-<td>5.7 sy</td>
-<td>内核进程占用CPU百分比，内核是于硬件进行交互</td>
-</tr>
-<tr>
-<td>ni</td>
-<td>优先调度进程占用CPU的时间</td>
-</tr>
-<tr>
-<td>45.2 id</td>
-<td>空闲CPU的百分比</td>
-</tr>
-<tr>
-<td>0.0 wa</td>
-<td>CPU等待IO完成的时间</td>
-</tr>
-<tr>
-<td>0.0 hi</td>
-<td>硬中断，占的CPU百分比</td>
-</tr>
-<tr>
-<td>0.0 si</td>
-<td>软中断，占的CPU百分比</td>
-</tr>
-<tr>
-<td>0.0 st</td>
-<td>比如虚拟机占用物理CPU的时间</td>
-</tr>
-</tbody></table>
-<p>什么是中断？</p>
-<p>中断就是终止当前在做的事情 去执行另一段程序</p>
-<p>会保留现场，执行的那段程序做完之后会在回来执行刚来尚未完成的部分</p>
-<p><img src="/medias/66.png" alt></p>
-<p>生活场景解释中断</p>
-<p>比如你在ML正在关键时刻，突然传来了敲门声，你的快递到了，于是不情愿的去开门取快递，取完快递回来继续ML</p>
-<p>上面的场景ML是一个过程的话，那么快递和一些其他的突发事件让这个过程在中间发生停顿或故障断开，就是活生生的中断</p>
-<p>这个场景，你是唯一具有处理能力的主体，不管是ML是取快递，同一个时间点上只能干一件事情，但在专心干一件事情时，总有许多紧迫或不紧迫的事情突然出现在面前，都需要去关注，有些还需要停下手头的工作马上去处理,只有处理完之后，方能晖投资完成先前的任务，把ML做完</p>
-<p>在你有生之年都不希望ML过程被打断，于是给快递提前定了时间，几点送到-这就是软中断</p>
-<p>跟人类似，CPU也要面对这样复杂的局面，意外是无处不在的-有可能是用户等的不耐烦，猛敲键盘，有可能网卡突然接收到一个新的数据库包，这些都是需要CPU具体情况具体分析，要么马上处理，要么暂缓响应，无论如何应对，都需要CPU暂停手头的工作，拿出一种对策，只有在响应之后，方能回头完成先前的使命 有了中断CPU才有并行处理能力</p>
-<p>中断了解即可</p>
-<p>软中断和硬中断的区别</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>软中断</th>
-<th>硬中断</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>是否有随机性  突发性</td>
-<td>否</td>
-<td>是</td>
-</tr>
-<tr>
-<td>是否有中断响应周期</td>
-<td>无</td>
-<td>是</td>
-</tr>
-<tr>
-<td>中断类型号的提供方法</td>
-<td>固定或由指令提供</td>
-<td>由中断控制器提供</td>
-</tr>
-</tbody></table>
-<p>top</p>
-<p>h   # 查看帮助</p>
-<p>1   # 数字1，显示所欲偶CPU核心的负载</p>
-<p>z   # 以高亮显示数据</p>
-<p>b   # 高亮显示处于R状态的进程</p>
-<p>M  # 按内存使用百分比排序输出</p>
-<p>P   # 按照CPU使用百分比排序输出</p>
-<p>q   # 退出top</p>
-<h3 id="管理进程状态"><a href="#管理进程状态" class="headerlink" title="管理进程状态"></a>管理进程状态</h3><p>当程序运行为进程后，如果希望停止进程，怎么办呢？那么此时我们可以使用linux的kill命令对进程发送关闭新号，当然除了kill 还有killall pkill</p>
-<p>1） 使用kill –l李处当前系统所支持的信号</p>
-<p><img src="/medias/67.png" alt></p>
-<p>虽然Linux信号很多，但是我们仅仅使用最常用的3个信号</p>
-<p>1）  SIGHUP 重新加载配置文件               1</p>
-<p>2）  SIGKILL 强制杀死进程                9</p>
-<p>3）  SIGTERM 终止进程，默认kill使用该信号 15</p>
-<p>[root@lzy ~]# ps axu|grep nginx  </p>
-<p>root   15688 0.0 0.1 87384 1132 ?    Ss  12:19  0:00 nginx: master process /usr/sbin/nginx</p>
-<p>nginx  15689 0.0 0.3 89096 3176 ?    S  12:19  0:00 nginx: worker process</p>
-<p>root   15691 0.0 0.0 112660  968 pts/3  R+  12:19  0:00 grep –color=auto nginx</p>
-<p># 发送重新加载信号 nginx配置文件发生改变，可用此重新加载</p>
-<p>[root@lzy ~]# kill -1 15688</p>
-<p>[root@lzy ~]# ps axu|grep nginx</p>
-<p>nginx  15692 0.0 0.3 89376 3648 ?    S  12:19  0:00 nginx: worker process</p>
-<p>root   15722 0.0 0.0 112660  968 pts/3  R+  12:20  0:00 grep –color=auto nginx</p>
-<p>发送停止信号 kill pid</p>
-<p>[root@lzy ~]# kill 15692</p>
-<p>强制终止服务</p>
-<p>kill -9 15692</p>
-<p>2.Linux系统中killall，pkill命令用于杀死指定名字的进程，我们可以使用kill命令杀死指定进程的PID的进程，killall和pkill直接杀进程而不需要查pid</p>
-<p>[root@lzy ~]# killall nginx</p>
-<p>[root@lzy ~]# pkill nginx</p>
-<p>使用pkill踢出从远程登录到本机的用户，终止pts1上所有进程，用户强制退出</p>
-<p>[root@lzy ~]# pkill -9 -t pts/1</p>
-<h3 id="管理后台进程"><a href="#管理后台进程" class="headerlink" title="管理后台进程"></a>管理后台进程</h3><p>1） 什么是后台进程</p>
-<p>他你刚才进程读会在终端前台运行，一旦关闭终端，进程随着结束，此时希望进程在后台运行不退出，这样关闭终端也不影响进程的正常运行</p>
-<p>2） 如何把程序放在后台</p>
-<p># 把进程放入后台运行 使用 &amp;</p>
-<p>[root@lzy ~]# sleep 3000 &amp;</p>
-<p>[1] 15909</p>
-<p># 把进程挂起放在后台</p>
-<p>[root@lzy ~]# sleep 4000</p>
-<p>^Z</p>
-<p>[3]+ Stopped         sleep 4000 [root@lzy ~]# </p>
-<p># jobs 显示在后台运行的程序</p>
-<p>[root@lzy ~]# jobs </p>
-<p>[1]- Running         sleep 3000 &amp;</p>
-<p>[2]+ Running         sleep 4000 &amp;</p>
-<p># 让作业2在后台运行</p>
-<p>[root@lzy ~]# bg %2</p>
-<p>[2]+ sleep 4000 &amp;</p>
-<p>[root@lzy ~]# jobs </p>
-<p>[1]- Running         sleep 3000 &amp;</p>
-<p>[2]+ Running         sleep 4000 &amp;</p>
-<p>将作业1掉回到前台运行</p>
-<p>[root@lzy ~]# fg %1</p>
-<p>sleep 3000</p>
-<p># 终止后台PID为2的进程</p>
-<p>[root@lzy ~]# kill %2</p>
-<p>[root@lzy ~]# jobs  </p>
-<p>[1]+ Stopped         sleep 3000</p>
-<p>[2]- Terminated       sleep 4000</p>
-<p># &amp; 后台运行</p>
-<p>for i in {1..10};do echo $i;done &amp;  # 内容还是输出到屏幕</p>
-<p>for i in {1..10};do echo $i;done &amp;&gt;/dev/null &amp; # 内容定向到空</p>
-<p>screen的使用 常用</p>
-<p>1） 安装</p>
-<p>yum –y install screen</p>
-<p>2) 使用方法</p>
-<p>  # screen 指定一个任务名称后进入到一个新bash中</p>
-<p>  screen -S wget_jenkins</p>
-<p># 在新bash中执行一条下载命令</p>
-<p>wget <a href="https://pkg.jenkins.io/redhat-stable/jenkins-2.190.1-1.1.noarch.rpm" target="_blank" rel="noopener">https://pkg.jenkins.io/redhat-stable/jenkins-2.190.1-1.1.noarch.rpm</a></p>
-<p># 平滑退出screen 不会终止任务，如果使用exit则退出</p>
-<p>ctrl+a+d  # 平滑退出screen任务</p>
-<p># 查看正在运行的screen有哪些任务</p>
-<p>[root@lzy ~]# screen -list</p>
-<p>There is a screen on:</p>
-<p>​    43698.wget_jenkins   (Detached)</p>
-<p>1 Socket in /var/run/screen/S-root.</p>
-<p># 进入正在执行的screen任务中 或者使用PID即可进入</p>
-<p>[root@lzy ~]# screen -r wget_jenkins</p>
-<h3 id="进程的优先级"><a href="#进程的优先级" class="headerlink" title="进程的优先级"></a>进程的优先级</h3><p>1） 在启动进程时，为不同的进程使用不同的调度策略</p>
-<p>nice 值越高 表示优先级越低，例如+19 该进程容易将CPU使用量让给其他进程</p>
-<p>nice值越低 表示优先级越高，例如-20, 改进程更不倾向于让出CPU</p>
-<p>使用top或ps敏玲查看进程的优先级</p>
-<p># 使用top可以查看nice优先级 NI:实际nice级别，默认是0 动态修正CPU调度。范围（-20~19）。越大，cpu调度越一般，越小，cpu调度越偏向它。一般用于后台进程，调整也是往大了调，用来给前台进程让出CPU资源</p>
-<p>PR: 优先级 显示nice值，PR默认是20，越小，优先级越高。修改nice可以同时修改PR  -20映射到0， +19映射到39 </p>
-<p><img src="/medias/68.png" alt></p>
-<p>使用ps查看进程优先级</p>
-<p><img src="/medias/69.png" alt></p>
-<p> 2）nice指定程序的优先级，语法格式nice -n 优先级数字 进程名称</p>
-<p> # 开启vim并指定程序优先级为-5 并查看进程优先级</p>
-<p><img src="/medias/70.png" alt></p>
-<h1 id="renice命令修改一个正在运行的进程优先级，语法格式-renice-–n-优先级数字-进程-pid"><a href="#renice命令修改一个正在运行的进程优先级，语法格式-renice-–n-优先级数字-进程-pid" class="headerlink" title="renice命令修改一个正在运行的进程优先级，语法格式 renice –n 优先级数字 进程 pid"></a>renice命令修改一个正在运行的进程优先级，语法格式 renice –n 优先级数字 进程 pid</h1><p>1)查看sshd进程当前的优先级状态</p>
-<p>[root@lzy ~]# ps axo pid,command,nice|grep sshd</p>
-<p> 1114 /usr/sbin/sshd -D       0</p>
-<p> 30865 sshd: root@pts/0       0</p>
-<p>2) 调整sshd主进程的优先级</p>
-<p>[root@lzy ~]# renice -n -20 1114</p>
-<p>1114 (process ID) old priority 0, new priority -20</p>
-<p>exit 退出当前bash</p>
-<p>登陆查看调整或的优先级 再次登陆后会由主进程fork子进程 子进程会继承主进程的优先级</p>
-<p>[root@lzy ~]# ps axo pid,command,nice|grep sshd</p>
-<p> 1114 /usr/sbin/sshd -D      -20</p>
-<p> 43747 sshd: root@pts/0      -20</p>
-<p> 43770 grep –color=auto sshd   -20</p>
-<h4 id="1-如何批量kill进程"><a href="#1-如何批量kill进程" class="headerlink" title="1  .如何批量kill进程"></a>1  .如何批量kill进程</h4><p>​    1）pkill nginx          # pkill  服务名字</p>
-<p>​    2）killall nginx       # killall 服务名字</p>
-<h4 id="2-需要安装nginx"><a href="#2-需要安装nginx" class="headerlink" title="2  .需要安装nginx"></a>2  .需要安装nginx</h4><p>​       yum -y install nginx</p>
-<p>​     启动服务</p>
-<p>​       systemctl start nginx</p>
-<p>​        浏览器访问页面 虚拟机IP地址</p>
-<p>2）强制杀死nginx master进程</p>
-<p>​      kill -9 pid</p>
-<p>3）如何批量杀死子进程 awk  </p>
-<p>​       ps axu|grep nginx|grep -v grep|awk ‘{print $2}’|xargs kill -9</p>
-<p>​       kill <code>ps axu|grep nginx|grep -v grep|awk &#39;{print $2}&#39;</code></p>
-<p>发送信号</p>
-<p>​        1. 对于系统中没有指定信号的进程 使用kill方式</p>
-<p>​        2.对于系统中的服务 使用服务的信号 /usr/sbin/nginx -s stop reload </p>
-<p>nginx 配置文件         /etc/nginx/nginx.conf</p>
-<p>增加nginx 子进程个数，vim /etc/nginx/nginx.conf 把worker_processes auto; 改为worker_processes 个数;</p>
-<h4 id="3-python程序如何启动和停止"><a href="#3-python程序如何启动和停止" class="headerlink" title="3  .python程序如何启动和停止"></a>3  .python程序如何启动和停止</h4><p> nohup python3.7 test.py &amp;       # py正确启动方式</p>
-<p> 如何查看py程序的帮助</p>
-<p>​    python3.7 test.py -h</p>
-<p>​    使用帮助:</p>
-<p>​            –redis  IP</p>
-<p>​            –port  6379</p>
-<p>​            –file  /tmp/test.txt</p>
-<p> 如何py程序较长 写入脚本中 test.sh</p>
-<p>​    #!/bin/bash</p>
-<p>​    nohup python3.7 test.py –redis 10.0.0.202 –port 6379 –file /tmp/test.txt &amp;</p>
-<p>​    如何运行?</p>
-<p>​    sh test_start.sh</p>
-<p>​    如何停止?</p>
-<p>​    #!/bin/sh</p>
-<p>​    ps axu|grep test.py|grep - v grep|awk ‘{print $2}’|xargs kill</p>
-<p>​    sh test_stop.sh</p>
+                <h1 id="架构基础概念-架构流程图"><a href="#架构基础概念-架构流程图" class="headerlink" title="架构基础概念,架构流程图"></a>架构基础概念,架构流程图</h1><h2 id="第一章-架构基础概念"><a href="#第一章-架构基础概念" class="headerlink" title="第一章:架构基础概念"></a>第一章:架构基础概念</h2><h3 id="1-基础概念："><a href="#1-基础概念：" class="headerlink" title="1.基础概念："></a>1.基础概念：</h3><pre class="line-numbers language-bash"><code class="language-bash">1.什么是项目: 盖一栋楼 一间屋子 类似于手机的APP 可以算做一个项目 一个网站-项目
+2.什么是架构：运行或维护一个项目使用的服务器
+3.什么是集群：为了解决项目运行过程中出现的问题，把多台计算机组合起来的单个系统
+4.什么是高可用: 当一台服务器不可用时，另一台服务器自动接管，保证业务不挂
+5.什么是负载均衡，把用户的请求，分摊到多个服务器上运行，保证服务器的稳定性
+
+用已知的来给未知的做铺垫
+架构相当于:酒店  红浪漫酒店
+          开车
+          高速
+          保安
+          迎宾
+          服务员  <span class="token comment" spellcheck="true">#解决客户一切需求</span>
+          厨师
+          经理    <span class="token comment" spellcheck="true">#运筹帷幄 掌控大局</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2-回话保持存储的位置"><a href="#2-回话保持存储的位置" class="headerlink" title="2.回话保持存储的位置"></a>2.回话保持存储的位置</h3><pre class="line-numbers language-bash"><code class="language-bash">1.本地
+2.Mysql数据库
+3.Redis数据库
+4.代码用户端-浏览器
+
+Zabbix监控-常用 监控服务器运行状态和进程
+Cacti监控 Linux集成 直接下载带有cacti的linux系统
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="3-扩展"><a href="#3-扩展" class="headerlink" title="3.扩展"></a>3.扩展</h3><pre class="line-numbers language-bash"><code class="language-bash">1.横向扩展:
+横向扩展也叫水平扩展，用更多的节点支撑更大量的请求。 如成千上万的蚂蚁完成一项搬运工作
+
+2.纵向扩展:
+纵向扩展又叫垂直扩展，扩展一个点的能力支撑更大的请求。如蜘蛛侠逼停火车    
+
+横向扩展-增加服务器数量
+纵向扩展-增加配置
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="第二章-架构流程图"><a href="#第二章-架构流程图" class="headerlink" title="第二章:架构流程图"></a>第二章:架构流程图</h2><p><img src="/medias/%E6%9E%B6%E6%9E%84%E6%B5%81%E7%A8%8B%E5%9B%BE.png" alt></p>
 
             </div>
             <hr />
@@ -1072,9 +697,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《进程》
+                    《架构基础概念、架构流程图》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/05/01/jin-cheng/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/05/25/jia-gou-ji-chu-gai-nian-jia-gou-liu-cheng-tu/" property="cc:attributionName"
                rel="cc:attributionURL">
                 Angle
             </a> 采用
@@ -1115,7 +740,7 @@
         repo: 'Angle889.github.io',
         owner: 'Angle889',
         admin: "Angle889",
-        id: '2020/05/01/jin-cheng/',
+        id: '2020/05/25/jia-gou-ji-chu-gai-nian-jia-gou-liu-cheng-tu/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1398,62 +1023,50 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/05/01/etc-wang-qia-pei-zhi-wen-jian-yun-xing-ji-bie-er-jin-zhi-an-zhuang/">
+                <a href="/2020/05/25/jia-gou-ji-chu-gai-nian-jia-gou-liu-cheng-tu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/34.jpg" class="responsive-img" alt="/etc网卡配置文件、运行级别、二进制安装">
+                        <img src="/medias/featureimages/43.jpg" class="responsive-img" alt="架构基础概念、架构流程图">
                         
-                        <span class="card-title">/etc网卡配置文件、运行级别、二进制安装</span>
+                        <span class="card-title">架构基础概念、架构流程图</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            第一章：网卡配置文件1 ./etc/sysconfig/network-scripts/ifcfg-eth0
-
-
-网卡配置文件
-表示
-
-
-
-TYPE=Ethernet
-网络类型、以太网
-
-
-BOOTPROTO=none
-获取IP地址
-
-
-N
+                            架构基础概念,架构流程图第一章:架构基础概念1.基础概念：1.什么是项目: 盖一栋楼 一间屋子 类似于手机的APP 可以算做一个项目 一个网站-项目
+2.什么是架构：运行或维护一个项目使用的服务器
+3.什么是集群：为了解决项目运行过程中出现
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-05-01
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-05-25
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Linux基础/" class="post-category" target="_blank">
-                                    Linux基础
+                            <a href="/categories/架构/" class="post-category" target="_blank">
+                                    架构
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Linux基础/" target="_blank">
-                        <span class="chip bg-color">Linux基础</span>
+                    <a href="/tags/架构/" target="_blank">
+                        <span class="chip bg-color">架构</span>
                     </a>
                     
                 </div>
@@ -1467,27 +1080,22 @@ N
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/01/kai-ji-liu-cheng-yong-hu-guan-li/">
+                <a href="/2020/05/01/xshell-6-lian-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/40.jpg" class="responsive-img" alt="开机流程、用户管理">
+                        <img src="/medias/featureimages/43.jpg" class="responsive-img" alt="xshell 6 连接">
                         
-                        <span class="card-title">开机流程、用户管理</span>
+                        <span class="card-title">xshell 6 连接</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1  .开机流程面试题​    1.描述linux系统从开机到登陆界面的启动过程（记时2分钟）
-解答：
-简述：
-1）开机BIOS自检
-2）MBR引导
-3）grub引导菜单
-4）加载内核kernel
-5）启动init进程
-6）读取initta
+                            第一章：连接服务器的两种工具​    1）使用Xshell连接
+​    2）使用crt远程连接工具
+​    3）（cmd可以连接，但有些功能不能使用）
+第二章：Xshell整体优化1）打开Xshell软件，点击“新建，会话”，输入名称和
                         
                     </div>
                     <div class="publish-info">

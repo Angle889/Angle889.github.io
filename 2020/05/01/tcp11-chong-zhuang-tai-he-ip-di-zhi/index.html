@@ -1042,27 +1042,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/05/01/ji-suan-ji-ying-jian-yu-zu-cheng-yuan-li/">
+                <a href="/2020/05/01/linux-12-wei-quan-xian-ti-xi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/39.jpg" class="responsive-img" alt="计算机硬件与组成原理">
+                        <img src="/medias/featureimages/35.jpg" class="responsive-img" alt="Linux  12位权限体系">
                         
-                        <span class="card-title">计算机硬件与组成原理</span>
+                        <span class="card-title">Linux  12位权限体系</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            第一章：服务器硬件1.1服务器种类
-  1）硬件服务器
-  2）云服务器
-1.2服务器外观分类
-  1）机架式服务器
-  2）塔式服务器(台式机差不多)
-  3）刀片式服务器
-1.3服务器品牌厂商
-  笔记本: 联想 DELL HP 华硕 
+                            第一章：前9位权限体系1  .RWX是什么？​    R  （read）         读         可以看文件 （cat less more head tail）
+   W （write）        写         可以写
                         
                     </div>
                     <div class="publish-info">
@@ -1099,22 +1092,21 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/01/vim-bian-ji-qi-he-linux-mu-lu-jie-gou-guang-qu-gua-zai/">
+                <a href="/2020/05/01/pi-liang-chuang-jian-yong-hu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/40.jpg" class="responsive-img" alt="VIM编辑器和linux目录结构、光驱挂载">
+                        <img src="/medias/featureimages/46.jpg" class="responsive-img" alt="批量创建用户">
                         
-                        <span class="card-title">VIM编辑器和linux目录结构、光驱挂载</span>
+                        <span class="card-title">批量创建用户</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            第一章：vim 编辑器 vi 1）第一个里程碑：如何进入到文件？如何打开文件？
-​    例子：vim oldboy.txt （如果文件不存在，则创建为新文件，无法创建目录）然后vim进入到视图模式。
- 2）第二个里程碑：如何编辑？
-​  
+                            1  .sed方式批量创建test01..test10的用户
+   例子：echo test{01..10}|xargs -n1|sed -r ‘s#(.*)#useradd \1#g’|bash
+   sed 方式批量创建test01..
                         
                     </div>
                     <div class="publish-info">
@@ -1307,11 +1299,11 @@
     <footer class="page-footer bg-color">
     <div class="container row center-align">
         <div class="col s12 m8 l8 copy-right">
-            &copy; 2020-2023 Angle. 版权所有
+            &copy; 2020-2021 Angle 版权所有
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">42.3k</span>
+            <span class="white-color">42.7k</span>
             
 
             <br>

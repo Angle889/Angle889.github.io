@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ww.lsk.cool/"/>
-  <updated>2020-05-01T11:11:38.808Z</updated>
+  <updated>2020-06-20T08:15:34.834Z</updated>
   <id>http://ww.lsk.cool/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>架构基础概念、架构流程图</title>
+    <link href="http://ww.lsk.cool/2020/05/25/jia-gou-ji-chu-gai-nian-jia-gou-liu-cheng-tu/"/>
+    <id>http://ww.lsk.cool/2020/05/25/jia-gou-ji-chu-gai-nian-jia-gou-liu-cheng-tu/</id>
+    <published>2020-05-24T16:00:00.000Z</published>
+    <updated>2020-06-20T08:15:34.834Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;架构基础概念-架构流程图&quot;&gt;&lt;a href=&quot;#架构基础概念-架构流程图&quot; class=&quot;headerlink&quot; title=&quot;架构基础概念,架构流程图&quot;&gt;&lt;/a&gt;架构基础概念,架构流程图&lt;/h1&gt;&lt;h2 id=&quot;第一章-架构基础概念&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="架构" scheme="http://ww.lsk.cool/categories/%E6%9E%B6%E6%9E%84/"/>
+    
+    
+      <category term="架构" scheme="http://ww.lsk.cool/tags/%E6%9E%B6%E6%9E%84/"/>
+    
+  </entry>
   
   <entry>
     <title>xshell 6 连接</title>
@@ -175,11 +201,11 @@
   </entry>
   
   <entry>
-    <title>TCP11种状态和IP地址</title>
-    <link href="http://ww.lsk.cool/2020/05/01/tcp11-chong-zhuang-tai-he-ip-di-zhi/"/>
-    <id>http://ww.lsk.cool/2020/05/01/tcp11-chong-zhuang-tai-he-ip-di-zhi/</id>
+    <title>find 查找文件、打包压缩</title>
+    <link href="http://ww.lsk.cool/2020/05/01/find-cha-zhao-wen-jian-da-bao-ya-suo/"/>
+    <id>http://ww.lsk.cool/2020/05/01/find-cha-zhao-wen-jian-da-bao-ya-suo/</id>
     <published>2020-04-30T16:00:00.000Z</published>
-    <updated>2020-05-01T13:00:20.879Z</updated>
+    <updated>2020-05-01T11:45:25.468Z</updated>
     
     <summary type="html">
     
@@ -187,96 +213,7 @@
       
         
         
-          &lt;h3 id=&quot;第一章：TCP11种状态&quot;&gt;&lt;a href=&quot;#第一章：TCP11种状态&quot; class=&quot;headerlink&quot; title=&quot;第一章：TCP11种状态&quot;&gt;&lt;/a&gt;第一章：TCP11种状态&lt;/h3&gt;&lt;p&gt;   客户端&amp;gt;未连接前的状态 closed 初始化
-        
-      
-    
-    </summary>
-    
-      <category term="Linux网络基础" scheme="http://ww.lsk.cool/categories/Linux%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/"/>
-    
-    
-      <category term="Linux网络基础" scheme="http://ww.lsk.cool/tags/Linux%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>VIM编辑器和linux目录结构、光驱挂载</title>
-    <link href="http://ww.lsk.cool/2020/05/01/vim-bian-ji-qi-he-linux-mu-lu-jie-gou-guang-qu-gua-zai/"/>
-    <id>http://ww.lsk.cool/2020/05/01/vim-bian-ji-qi-he-linux-mu-lu-jie-gou-guang-qu-gua-zai/</id>
-    <published>2020-04-30T16:00:00.000Z</published>
-    <updated>2020-05-01T11:39:19.680Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;第一章：vim-编辑器-vi&quot;&gt;&lt;a href=&quot;#第一章：vim-编辑器-vi&quot; class=&quot;headerlink&quot; title=&quot;第一章：vim 编辑器 vi&quot;&gt;&lt;/a&gt;第一章：vim 编辑器 vi&lt;/h3&gt;&lt;p&gt;
-        
-      
-    
-    </summary>
-    
-      <category term="Linux基础" scheme="http://ww.lsk.cool/categories/Linux%E5%9F%BA%E7%A1%80/"/>
-    
-    
-      <category term="Linux基础" scheme="http://ww.lsk.cool/tags/Linux%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux 文件类型、硬软链接</title>
-    <link href="http://ww.lsk.cool/2020/05/01/linux-wen-jian-lei-xing-ying-ruan-lian-jie/"/>
-    <id>http://ww.lsk.cool/2020/05/01/linux-wen-jian-lei-xing-ying-ruan-lian-jie/</id>
-    <published>2020-04-30T16:00:00.000Z</published>
-    <updated>2020-05-01T11:41:59.984Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;33575001&lt;/th&gt;
-&lt;th&gt;-&lt;/th&gt;
-&lt;th&gt;rw-r–r–&lt;/th&gt;
-&lt;th&gt;.&lt;/th&gt;
-&lt;th&gt;1&lt;/th&gt;
-&lt;th&gt;root&lt;/th&gt;
-&lt;th&gt;root&lt;/th&gt;
-&lt;th&gt;18&lt;/th&gt;
-&lt;th&gt;12月 12
-        
-      
-    
-    </summary>
-    
-      <category term="Linux基础" scheme="http://ww.lsk.cool/categories/Linux%E5%9F%BA%E7%A1%80/"/>
-    
-    
-      <category term="Linux基础" scheme="http://ww.lsk.cool/tags/Linux%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>yum 源、selinux 防火墙、firewalld 防火墙、字符集</title>
-    <link href="http://ww.lsk.cool/2020/05/01/yum-yuan-selinux-fang-huo-qiang-firewalld-fang-huo-qiang-zi-fu-ji/"/>
-    <id>http://ww.lsk.cool/2020/05/01/yum-yuan-selinux-fang-huo-qiang-firewalld-fang-huo-qiang-zi-fu-ji/</id>
-    <published>2020-04-30T16:00:00.000Z</published>
-    <updated>2020-05-01T11:30:51.070Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;第一章：yum-源&quot;&gt;&lt;a href=&quot;#第一章：yum-源&quot; class=&quot;headerlink&quot; title=&quot;第一章：yum 源&quot;&gt;&lt;/a&gt;第一章：yum 源&lt;/h3&gt;&lt;h4
+          &lt;h4 id=&quot;1-find的格式：&quot;&gt;&lt;a href=&quot;#1-find的格式：&quot; class=&quot;headerlink&quot; title=&quot;1 .find的格式：&quot;&gt;&lt;/a&gt;1 .find的格式：&lt;/h4&gt;&lt;p&gt;​         find 在哪里找 -类型 f -名字
         
       
     
@@ -318,11 +255,11 @@
   </entry>
   
   <entry>
-    <title>三剑客老大awk</title>
-    <link href="http://ww.lsk.cool/2020/05/01/san-jian-ke-lao-da-awk/"/>
-    <id>http://ww.lsk.cool/2020/05/01/san-jian-ke-lao-da-awk/</id>
+    <title>DNS解析过程、TCP三次握手和四次挥手</title>
+    <link href="http://ww.lsk.cool/2020/05/01/dns-jie-xi-guo-cheng-tcp-san-ci-wo-shou-he-si-ci-hui-shou/"/>
+    <id>http://ww.lsk.cool/2020/05/01/dns-jie-xi-guo-cheng-tcp-san-ci-wo-shou-he-si-ci-hui-shou/</id>
     <published>2020-04-30T16:00:00.000Z</published>
-    <updated>2020-05-01T11:53:08.433Z</updated>
+    <updated>2020-05-01T12:56:41.008Z</updated>
     
     <summary type="html">
     
@@ -330,8 +267,35 @@
       
         
         
-          &lt;h4 id=&quot;1-1-awk的格式&quot;&gt;&lt;a href=&quot;#1-1-awk的格式&quot; class=&quot;headerlink&quot; title=&quot;1.1 awk的格式&quot;&gt;&lt;/a&gt;1.1 awk的格式&lt;/h4&gt;&lt;p&gt;   awk ‘找谁{干啥}’ passwd.bak&lt;/p&gt;
-&lt;p&gt;  
+          &lt;p&gt;第一章：DNS解析过程&lt;/p&gt;
+&lt;p&gt;1  .域名是什么？&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;      
+        
+      
+    
+    </summary>
+    
+      <category term="Linux网络基础" scheme="http://ww.lsk.cool/categories/Linux%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Linux网络基础" scheme="http://ww.lsk.cool/tags/Linux%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>yum 源、selinux 防火墙、firewalld 防火墙、字符集</title>
+    <link href="http://ww.lsk.cool/2020/05/01/yum-yuan-selinux-fang-huo-qiang-firewalld-fang-huo-qiang-zi-fu-ji/"/>
+    <id>http://ww.lsk.cool/2020/05/01/yum-yuan-selinux-fang-huo-qiang-firewalld-fang-huo-qiang-zi-fu-ji/</id>
+    <published>2020-04-30T16:00:00.000Z</published>
+    <updated>2020-05-01T11:30:51.070Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;第一章：yum-源&quot;&gt;&lt;a href=&quot;#第一章：yum-源&quot; class=&quot;headerlink&quot; title=&quot;第一章：yum 源&quot;&gt;&lt;/a&gt;第一章：yum 源&lt;/h3&gt;&lt;h4
         
       
     
@@ -374,11 +338,11 @@
   </entry>
   
   <entry>
-    <title>DNS解析过程、TCP三次握手和四次挥手</title>
-    <link href="http://ww.lsk.cool/2020/05/01/dns-jie-xi-guo-cheng-tcp-san-ci-wo-shou-he-si-ci-hui-shou/"/>
-    <id>http://ww.lsk.cool/2020/05/01/dns-jie-xi-guo-cheng-tcp-san-ci-wo-shou-he-si-ci-hui-shou/</id>
+    <title>三剑客老大awk</title>
+    <link href="http://ww.lsk.cool/2020/05/01/san-jian-ke-lao-da-awk/"/>
+    <id>http://ww.lsk.cool/2020/05/01/san-jian-ke-lao-da-awk/</id>
     <published>2020-04-30T16:00:00.000Z</published>
-    <updated>2020-05-01T12:56:41.008Z</updated>
+    <updated>2020-05-01T11:53:08.433Z</updated>
     
     <summary type="html">
     
@@ -386,18 +350,17 @@
       
         
         
-          &lt;p&gt;第一章：DNS解析过程&lt;/p&gt;
-&lt;p&gt;1  .域名是什么？&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;      
+          &lt;h4 id=&quot;1-1-awk的格式&quot;&gt;&lt;a href=&quot;#1-1-awk的格式&quot; class=&quot;headerlink&quot; title=&quot;1.1 awk的格式&quot;&gt;&lt;/a&gt;1.1 awk的格式&lt;/h4&gt;&lt;p&gt;   awk ‘找谁{干啥}’ passwd.bak&lt;/p&gt;
+&lt;p&gt;  
         
       
     
     </summary>
     
-      <category term="Linux网络基础" scheme="http://ww.lsk.cool/categories/Linux%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/"/>
+      <category term="Linux基础" scheme="http://ww.lsk.cool/categories/Linux%E5%9F%BA%E7%A1%80/"/>
     
     
-      <category term="Linux网络基础" scheme="http://ww.lsk.cool/tags/Linux%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/"/>
+      <category term="Linux基础" scheme="http://ww.lsk.cool/tags/Linux%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
@@ -429,11 +392,11 @@
   </entry>
   
   <entry>
-    <title>/etc网卡配置文件、运行级别、二进制安装</title>
-    <link href="http://ww.lsk.cool/2020/05/01/etc-wang-qia-pei-zhi-wen-jian-yun-xing-ji-bie-er-jin-zhi-an-zhuang/"/>
-    <id>http://ww.lsk.cool/2020/05/01/etc-wang-qia-pei-zhi-wen-jian-yun-xing-ji-bie-er-jin-zhi-an-zhuang/</id>
+    <title>Linux 文件类型、硬软链接</title>
+    <link href="http://ww.lsk.cool/2020/05/01/linux-wen-jian-lei-xing-ying-ruan-lian-jie/"/>
+    <id>http://ww.lsk.cool/2020/05/01/linux-wen-jian-lei-xing-ying-ruan-lian-jie/</id>
     <published>2020-04-30T16:00:00.000Z</published>
-    <updated>2020-05-01T11:22:13.536Z</updated>
+    <updated>2020-05-01T11:41:59.984Z</updated>
     
     <summary type="html">
     
@@ -441,7 +404,18 @@
       
         
         
-          &lt;h3 id=&quot;第一章：网卡配置文件&quot;&gt;&lt;a href=&quot;#第一章：网卡配置文件&quot; class=&quot;headerlink&quot; title=&quot;第一章：网卡配置文件&quot;&gt;&lt;/a&gt;第一章：网卡配置文件&lt;/h3&gt;&lt;h4
+          &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;33575001&lt;/th&gt;
+&lt;th&gt;-&lt;/th&gt;
+&lt;th&gt;rw-r–r–&lt;/th&gt;
+&lt;th&gt;.&lt;/th&gt;
+&lt;th&gt;1&lt;/th&gt;
+&lt;th&gt;root&lt;/th&gt;
+&lt;th&gt;root&lt;/th&gt;
+&lt;th&gt;18&lt;/th&gt;
+&lt;th&gt;12月 12
         
       
     
@@ -507,11 +481,11 @@
   </entry>
   
   <entry>
-    <title>抓包方式和网络常用命令</title>
-    <link href="http://ww.lsk.cool/2020/05/01/zhua-bao-fang-shi-he-wang-luo-chang-yong-ming-ling/"/>
-    <id>http://ww.lsk.cool/2020/05/01/zhua-bao-fang-shi-he-wang-luo-chang-yong-ming-ling/</id>
+    <title>TCP11种状态和IP地址</title>
+    <link href="http://ww.lsk.cool/2020/05/01/tcp11-chong-zhuang-tai-he-ip-di-zhi/"/>
+    <id>http://ww.lsk.cool/2020/05/01/tcp11-chong-zhuang-tai-he-ip-di-zhi/</id>
     <published>2020-04-30T16:00:00.000Z</published>
-    <updated>2020-05-01T13:07:01.558Z</updated>
+    <updated>2020-05-01T13:00:20.879Z</updated>
     
     <summary type="html">
     
@@ -519,7 +493,7 @@
       
         
         
-          &lt;h3 id=&quot;第一章：抓包方式&quot;&gt;&lt;a href=&quot;#第一章：抓包方式&quot; class=&quot;headerlink&quot; title=&quot;第一章：抓包方式&quot;&gt;&lt;/a&gt;第一章：抓包方式&lt;/h3&gt;&lt;h4
+          &lt;h3 id=&quot;第一章：TCP11种状态&quot;&gt;&lt;a href=&quot;#第一章：TCP11种状态&quot; class=&quot;headerlink&quot; title=&quot;第一章：TCP11种状态&quot;&gt;&lt;/a&gt;第一章：TCP11种状态&lt;/h3&gt;&lt;p&gt;   客户端&amp;gt;未连接前的状态 closed 初始化
         
       
     
@@ -557,6 +531,32 @@
     
     
       <category term="Linux基础" scheme="http://ww.lsk.cool/tags/Linux%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>抓包方式和网络常用命令</title>
+    <link href="http://ww.lsk.cool/2020/05/01/zhua-bao-fang-shi-he-wang-luo-chang-yong-ming-ling/"/>
+    <id>http://ww.lsk.cool/2020/05/01/zhua-bao-fang-shi-he-wang-luo-chang-yong-ming-ling/</id>
+    <published>2020-04-30T16:00:00.000Z</published>
+    <updated>2020-05-01T13:07:01.558Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;第一章：抓包方式&quot;&gt;&lt;a href=&quot;#第一章：抓包方式&quot; class=&quot;headerlink&quot; title=&quot;第一章：抓包方式&quot;&gt;&lt;/a&gt;第一章：抓包方式&lt;/h3&gt;&lt;h4
+        
+      
+    
+    </summary>
+    
+      <category term="Linux网络基础" scheme="http://ww.lsk.cool/categories/Linux%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Linux网络基础" scheme="http://ww.lsk.cool/tags/Linux%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
