@@ -4,14 +4,13 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="搭配网络路由表, rsync NFS sersync LNMP架构 linux三剑客 shell编程 DBA">
+    <meta name="keywords" content="架构基础概念、架构流程图, rsync NFS sersync LNMP架构 linux三剑客 shell编程 DBA">
     <meta name="baidu-site-verification" content="D6Cl8NLHeO">
     <meta name="google-site-verification" content="D6Cl8NLHeO">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="第一章：静态路由
-
-第一步：PC电脑IP配置PC0电脑配置ip地址为：192.168.1.2 子网掩码：255.255.255.0 网关：192.168.1.254
-PC1电脑配置ip地址为：192.168.4.3 子网掩码：255.255">
+    <meta name="description" content="架构基础概念,架构流程图第一章:架构基础概念1.基础概念：1.什么是项目: 盖一栋楼 一间屋子 类似于手机的APP 可以算做一个项目 一个网站-项目
+2.什么是架构：运行或维护一个项目使用的服务器
+3.什么是集群：为了解决项目运行过程中出现">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +18,7 @@ PC1电脑配置ip地址为：192.168.4.3 子网掩码：255.255">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>搭配网络路由表 | Angle的博客</title>
+    <title>架构基础概念、架构流程图 | Angle的博客</title>
     <link rel="icon" type="image/png" href="/boke.JPG">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -316,7 +315,7 @@ PC1电脑配置ip地址为：192.168.4.3 子网掩码：255.255">
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = 'SHA256';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -329,13 +328,13 @@ PC1电脑配置ip地址为：192.168.4.3 子网掩码：255.255">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/56.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/43.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        搭配网络路由表
+                        架构基础概念、架构流程图
                     </div>
                 </div>
             </div>
@@ -446,8 +445,8 @@ PC1电脑配置ip地址为：192.168.4.3 子网掩码：255.255">
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/Linux网络基础/" target="_blank">
-                            <span class="chip bg-color">Linux网络基础</span>
+                        <a href="/tags/架构/" target="_blank">
+                            <span class="chip bg-color">架构</span>
                         </a>
                         
                     </div>
@@ -458,8 +457,8 @@ PC1电脑配置ip地址为：192.168.4.3 子网掩码：255.255">
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/Linux网络基础/" class="post-category" target="_blank">
-                            Linux网络基础
+                        <a href="/categories/架构/" class="post-category" target="_blank">
+                            架构
                         </a>
                         
                     </div>
@@ -484,14 +483,14 @@ PC1电脑配置ip地址为：192.168.4.3 子网掩码：255.255">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.4k
+                    418
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    8 分
+                    1 分
                 </div>
                 
                 
@@ -507,164 +506,39 @@ PC1电脑配置ip地址为：192.168.4.3 子网掩码：255.255">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>第一章：静态路由</p>
-<p><img src="/medias/71.png" alt></p>
-<h4 id="第一步：PC电脑IP配置"><a href="#第一步：PC电脑IP配置" class="headerlink" title="第一步：PC电脑IP配置"></a>第一步：PC电脑IP配置</h4><p>PC0电脑配置ip地址为：192.168.1.2 子网掩码：255.255.255.0 网关：192.168.1.254</p>
-<p>PC1电脑配置ip地址为：192.168.4.3 子网掩码：255.255.255.0 网关：192.168.4.254</p>
-<h4 id="第二步：路由表配置-CLI"><a href="#第二步：路由表配置-CLI" class="headerlink" title="第二步：路由表配置 CLI"></a>第二步：路由表配置 CLI</h4><p>R1路由表：</p>
-<p>Router&gt;enable        #进入特权模式</p>
-<p>Router#conf t        #进入配置模式</p>
-<p>Enter configuration commands, one per line. End with CNTL/Z.</p>
-<p>Router(config)#hostname R1      #修改路由器名称</p>
-<p>R1(config)#interface Gig0/0     #进入Gig0/0端口</p>
-<p>R1(config-if)#ip address 192.168.1.254 255.255.255.0</p>
-<p>R1(config-if)#no shutdown       #开启端口</p>
-<p>R1(config-if)#exit          #退出到配置模式</p>
-<p>R1(config)#interface Gig0/1     #进入Gig0/1端口</p>
-<p>R1(config-if)#ip address 192.168.2.2 255.255.255.0</p>
-<p>R1(config-if)#no shutdown</p>
-<p>R1(config-if)#exit</p>
-<p>R1(config)#ip route 192.168.4.0 255.255.255.0 192.168.2.3</p>
-<p>R1(config)#exit</p>
-<p>R1#show running-config         # 查看全局配置</p>
-<p>R1(config)#show ip interface brief   # 查看接口地址</p>
-<p>R1(config)#show ip route        # 查看路由表信息</p>
-<p>R2 路由表：</p>
-<p>Router&gt;enable </p>
-<p>Router#conf t</p>
-<p>Enter configuration commands, one per line. End with CNTL/Z.</p>
-<p>Router(config)#hostname R2</p>
-<p>R2(config)#interface Gig0/0</p>
-<p>R2(config-if)#ip address 192.168.2.3 255.255.255.0</p>
-<p>R2(config-if)#no shutdown </p>
-<p>R2(config-if)#exit</p>
-<p>R2(config)#interface Gig0/1</p>
-<p>R2(config-if)#ip address 192.168.3.1 255.255.255.0</p>
-<p>R2(config-if)#no shutdown</p>
-<p>R2(config-if)#exit</p>
-<p>R2(config)#ip route 192.168.4.0 255.255.255.0 192.168.3.2</p>
-<p>R2(config)#ip route 192.168.1.0 255.255.255.0 192.168.2.2</p>
-<p>R2(config)#exit</p>
-<p>R2#show running-config</p>
-<p>R3 路由表：</p>
-<p>Router&gt;enable </p>
-<p>Router#conf t</p>
-<p>Enter configuration commands, one per line. End with CNTL/Z.</p>
-<p>Router(config)#hostname R3</p>
-<p>R3(config)#interface Gig0/0</p>
-<p>R3(config-if)#ip address 192.168.3.2 255.255.255.0</p>
-<p>R3(config-if)#no shutdown </p>
-<p>R3(config-if)#exit</p>
-<p>R3(config)#interface Gig0/1</p>
-<p>R3(config-if)#ip address 192.168.4.254 255.255.255.0</p>
-<p>R3(config-if)#no shutdown</p>
-<p>R3(config-if)#exit</p>
-<p>R3(config)#ip route 192.168.1.0 255.255.255.0 192.168.3.1</p>
-<p>R3(config)#exit</p>
-<p>R3#show running-config</p>
-<h3 id="第二章：动态路由（协议-rip-ospf-eigrp-bgp-isis）"><a href="#第二章：动态路由（协议-rip-ospf-eigrp-bgp-isis）" class="headerlink" title="第二章：动态路由（协议: rip ospf eigrp bgp isis）"></a>第二章：动态路由（协议: rip ospf eigrp bgp isis）</h3><p><img src="/medias/72.png" alt></p>
-<h4 id="第一步：PC电脑IP配置-1"><a href="#第一步：PC电脑IP配置-1" class="headerlink" title="第一步：PC电脑IP配置"></a>第一步：PC电脑IP配置</h4><p>PC0电脑配置ip地址为：192.168.1.2 子网掩码：255.255.255.0 网关：192.168.1.254</p>
-<p>PC1电脑配置ip地址为：192.168.4.3 子网掩码：255.255.255.0 网关：192.168.4.254</p>
-<h4 id="第二步：路由表动态配置"><a href="#第二步：路由表动态配置" class="headerlink" title="第二步：路由表动态配置"></a>第二步：路由表动态配置</h4><p>R1路由表：</p>
-<p>Router&gt;enable        #进入特权模式</p>
-<p>Router#conf t        #进入配置模式</p>
-<p>Enter configuration commands, one per line. End with CNTL/Z.</p>
-<p>Router(config)#hostname R1      #修改路由器名称</p>
-<p>R1(config)#interface Gig0/0     #进入Gig0/0端口</p>
-<p>R1(config-if)#ip address 192.168.1.254 255.255.255.0</p>
-<p>R1(config-if)#no shutdown       #开启端口</p>
-<p>R1(config-if)#exit          #退出到配置模式</p>
-<p>R1(config)#interface Gig0/1     #进入Gig0/1端口</p>
-<p>R1(config-if)#ip address 192.168.2.2 255.255.255.0</p>
-<p>R1(config-if)#no shutdown</p>
-<p>R1#exit </p>
-<p>R1#conf t</p>
-<p>Enter configuration commands, one per line. End with CNTL/Z.</p>
-<p>R1(config)#router rip       # 配置动态协议 rip</p>
-<p>R1(config-router)#network 192.168.1.0 </p>
-<p>R1(config-router)#network 192.168.2.0 </p>
-<p>R1(config-router)#exit</p>
-<p>R1(config)#exit</p>
-<p>R1#show ip route          #查看路由表</p>
-<p>Gateway of last resort is not set</p>
-<p>192.168.1.0/24 is variably subnetted, 2 subnets, 2 masks</p>
-<p>C 192.168.1.0/24 is directly connected, GigabitEthernet0/0</p>
-<p>L 192.168.1.254/32 is directly connected, GigabitEthernet0/0</p>
-<p>192.168.2.0/24 is variably subnetted, 2 subnets, 2 masks</p>
-<p>C 192.168.2.0/24 is directly connected, GigabitEthernet0/1</p>
-<p>L 192.168.2.2/32 is directly connected, GigabitEthernet0/1</p>
-<p>R 192.168.3.0/24 [120/1] via 192.168.2.3, 00:00:14, GigabitEthernet0/1</p>
-<p>R 192.168.4.0/24 [120/2] via 192.168.2.3, 00:00:14, GigabitEthernet0/1</p>
-<p>R2 路由表：</p>
-<p>Router&gt;enable </p>
-<p>Router#conf t</p>
-<p>Enter configuration commands, one per line. End with CNTL/Z.</p>
-<p>Router(config)#hostname R2</p>
-<p>R2(config)#interface Gig0/0</p>
-<p>R2(config-if)#ip address 192.168.2.3 255.255.255.0</p>
-<p>R2(config-if)#no shutdown </p>
-<p>R2(config-if)#exit</p>
-<p>R2(config)#interface Gig0/1</p>
-<p>R2(config-if)#ip address 192.168.3.1 255.255.255.0</p>
-<p>R2(config-if)#no shutdown</p>
-<p>R2#exit </p>
-<p>R2#conf t</p>
-<p>Enter configuration commands, one per line. End with CNTL/Z.</p>
-<p>R2(config)#router rip       # 配置动态协议 rip</p>
-<p>R2(config-router)#network 192.168.2.0 </p>
-<p>R2(config-router)#network 192.168.3.0 </p>
-<p>R2(config-router)#exit</p>
-<p>R2(config)#exit</p>
-<p>R2#show ip route          #查看路由表</p>
-<p>Gateway of last resort is not set</p>
-<p>192.168.1.0/24 is variably subnetted, 2 subnets, 2 masks</p>
-<p>C 192.168.1.0/24 is directly connected, GigabitEthernet0/0</p>
-<p>L 192.168.1.254/32 is directly connected, GigabitEthernet0/0</p>
-<p>192.168.2.0/24 is variably subnetted, 2 subnets, 2 masks</p>
-<p>C 192.168.2.0/24 is directly connected, GigabitEthernet0/1</p>
-<p>L 192.168.2.2/32 is directly connected, GigabitEthernet0/1</p>
-<p>R 192.168.3.0/24 [120/1] via 192.168.2.3, 00:00:14, GigabitEthernet0/1</p>
-<p>R 192.168.4.0/24 [120/2] via 192.168.2.3, 00:00:14, GigabitEthernet0/1</p>
-<p>R3 路由表：</p>
-<p>Router&gt;enable </p>
-<p>Router#conf t</p>
-<p>Enter configuration commands, one per line. End with CNTL/Z.</p>
-<p>Router(config)#hostname R3</p>
-<p>R3(config)#interface Gig0/0</p>
-<p>R3(config-if)#ip address 192.168.3.2 255.255.255.0</p>
-<p>R3(config-if)#no shutdown </p>
-<p>R3(config-if)#exit</p>
-<p>R3(config)#interface Gig0/1</p>
-<p>R3(config-if)#ip address 192.168.4.254 255.255.255.0</p>
-<p>R3(config-if)#no shutdown</p>
-<p>R3#exit </p>
-<p>R3#conf t</p>
-<p>Enter configuration commands, one per line. End with CNTL/Z.</p>
-<p>R3(config)#router rip       # 配置动态协议 rip</p>
-<p>R3(config-router)#network 192.168.3.0 </p>
-<p>R3(config-router)#network 192.168.4.0 </p>
-<p>R3(config-router)#exit</p>
-<p>R3(config)#exit</p>
-<p>R3#show ip route          #查看路由表</p>
-<p>Gateway of last resort is not set</p>
-<p>R 192.168.1.0/24 [120/2] via 192.168.3.1, 00:00:15, GigabitEthernet0/0</p>
-<p>R 192.168.2.0/24 [120/1] via 192.168.3.1, 00:00:15, GigabitEthernet0/0</p>
-<p>192.168.3.0/24 is variably subnetted, 2 subnets, 2 masks</p>
-<p>C 192.168.3.0/24 is directly connected, GigabitEthernet0/0</p>
-<p>L 192.168.3.2/32 is directly connected, GigabitEthernet0/0</p>
-<p>192.168.4.0/24 is variably subnetted, 2 subnets, 2 masks</p>
-<p>C 192.168.4.0/24 is directly connected, GigabitEthernet0/1</p>
-<p>L 192.168.4.254/32 is directly connected, GigabitEthernet0/1</p>
-<h3 id="第三章：策略路由"><a href="#第三章：策略路由" class="headerlink" title="第三章：策略路由"></a>第三章：策略路由</h3><p>  centos 指定一条默认路由给 test表</p>
-<p>  ip route add 0/0 via 10.0.1.1 table test</p>
-<p>  源地址从10.0.2.2过来的数据包 默认的走test表</p>
-<p>  ip rule add from 10.0.2.2 table test</p>
-<p>  生产场景 PPTP 拨号</p>
-<p>  1.vpn正常拨号</p>
-<p>  2.ssh无法连接 113.88.12.240 # 公司公网IP地址</p>
-<p>   添加一个表 200优先级 ssh   </p>
-<p>   ip route add 0/0 via 39.107.76.254 table ssh</p>
-<p>   ip rule add from 113.88.12.240 table ssh</p>
+                <h1 id="架构基础概念-架构流程图"><a href="#架构基础概念-架构流程图" class="headerlink" title="架构基础概念,架构流程图"></a>架构基础概念,架构流程图</h1><h2 id="第一章-架构基础概念"><a href="#第一章-架构基础概念" class="headerlink" title="第一章:架构基础概念"></a>第一章:架构基础概念</h2><h3 id="1-基础概念："><a href="#1-基础概念：" class="headerlink" title="1.基础概念："></a>1.基础概念：</h3><pre class="line-numbers language-bash"><code class="language-bash">1.什么是项目: 盖一栋楼 一间屋子 类似于手机的APP 可以算做一个项目 一个网站-项目
+2.什么是架构：运行或维护一个项目使用的服务器
+3.什么是集群：为了解决项目运行过程中出现的问题，把多台计算机组合起来的单个系统
+4.什么是高可用: 当一台服务器不可用时，另一台服务器自动接管，保证业务不挂
+5.什么是负载均衡，把用户的请求，分摊到多个服务器上运行，保证服务器的稳定性
+
+用已知的来给未知的做铺垫
+架构相当于:酒店  红浪漫酒店
+          开车
+          高速
+          保安
+          迎宾
+          服务员  <span class="token comment" spellcheck="true">#解决客户一切需求</span>
+          厨师
+          经理    <span class="token comment" spellcheck="true">#运筹帷幄 掌控大局</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2-回话保持存储的位置"><a href="#2-回话保持存储的位置" class="headerlink" title="2.回话保持存储的位置"></a>2.回话保持存储的位置</h3><pre class="line-numbers language-bash"><code class="language-bash">1.本地
+2.Mysql数据库
+3.Redis数据库
+4.代码用户端-浏览器
+
+Zabbix监控-常用 监控服务器运行状态和进程
+Cacti监控 Linux集成 直接下载带有cacti的linux系统
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="3-扩展"><a href="#3-扩展" class="headerlink" title="3.扩展"></a>3.扩展</h3><pre class="line-numbers language-bash"><code class="language-bash">1.横向扩展:
+横向扩展也叫水平扩展，用更多的节点支撑更大量的请求。 如成千上万的蚂蚁完成一项搬运工作
+
+2.纵向扩展:
+纵向扩展又叫垂直扩展，扩展一个点的能力支撑更大的请求。如蜘蛛侠逼停火车    
+
+横向扩展-增加服务器数量
+纵向扩展-增加配置
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="第二章-架构流程图"><a href="#第二章-架构流程图" class="headerlink" title="第二章:架构流程图"></a>第二章:架构流程图</h2><p><img src="/medias/%E6%9E%B6%E6%9E%84%E6%B5%81%E7%A8%8B%E5%9B%BE.png" alt></p>
 
             </div>
             <hr />
@@ -823,9 +697,9 @@ PC1电脑配置ip地址为：192.168.4.3 子网掩码：255.255">
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《搭配网络路由表》
+                    《架构基础概念、架构流程图》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/05/01/da-pei-wang-luo-lu-you-biao/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/05/01/jia-gou-ji-chu-gai-nian-jia-gou-liu-cheng-tu/" property="cc:attributionName"
                rel="cc:attributionURL">
                 Angle
             </a> 采用
@@ -866,7 +740,7 @@ PC1电脑配置ip地址为：192.168.4.3 子网掩码：255.255">
         repo: 'Angle889.github.io',
         owner: 'Angle889',
         admin: "Angle889",
-        id: '2020/05/01/da-pei-wang-luo-lu-you-biao/',
+        id: '2020/05/01/jia-gou-ji-chu-gai-nian-jia-gou-liu-cheng-tu/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -1153,21 +1027,37 @@ PC1电脑配置ip地址为：192.168.4.3 子网掩码：255.255">
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/05/01/pi-liang-chuang-jian-yong-hu/">
+                <a href="/2020/05/01/ming-ling-zong-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/46.jpg" class="responsive-img" alt="批量创建用户">
+                        <img src="/medias/featureimages/30.jpg" class="responsive-img" alt="命令总结">
                         
-                        <span class="card-title">批量创建用户</span>
+                        <span class="card-title">命令总结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1  .sed方式批量创建test01..test10的用户
-   例子：echo test{01..10}|xargs -n1|sed -r ‘s#(.*)#useradd \1#g’|bash
-   sed 方式批量创建test01..
+                            第1章：路径
+   路径分为两种：
+
+
+
+路径分类
+命令
+生活例子
+
+
+
+相对路径
+hosts oldboy.txt passwd
+隔壁305 隔壁304
+
+
+绝对路径
+/etc/oldboy /etc/passwd
+地球/亚洲/中国/广东
                         
                     </div>
                     <div class="publish-info">
@@ -1204,23 +1094,22 @@ PC1电脑配置ip地址为：192.168.4.3 子网掩码：255.255">
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/01/wang-luo-jie-shao/">
+                <a href="/2020/05/01/zheng-ze-grep-yu-kuo-zhan-zheng-ze-egrep-cha-zhao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/38.jpg" class="responsive-img" alt="网络介绍">
+                        <img src="/medias/featureimages/36.jpg" class="responsive-img" alt="正则grep与扩展正则egrep查找">
                         
-                        <span class="card-title">网络介绍</span>
+                        <span class="card-title">正则grep与扩展正则egrep查找</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            第一章：网络介绍1  .如何通过网络实现两台主机间通讯   1)通过网卡把二进制转换为高低电压
-   2)当对端接收后网卡把高低电压转换为二进制信息
-2  .网线类型： 双绞线特点：
-   共8芯 实际使用4芯 其他4芯 额外供电
-   橙
+                            1  .什么是正则表达式 1） 正则表达式就是为了处理大量的文字|文本|字符串而定义的一套规则和方法。
+2）通过定义的这些特殊符号的辅助，系统管理员就可以快速过滤，替换或输出需要的字符串。
+3）Linux正则表达式一般以行为单位处理的。
+简
                         
                     </div>
                     <div class="publish-info">
@@ -1231,8 +1120,8 @@ PC1电脑配置ip地址为：192.168.4.3 子网掩码：255.255">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Linux网络基础/" class="post-category" target="_blank">
-                                    Linux网络基础
+                            <a href="/categories/Linux基础/" class="post-category" target="_blank">
+                                    Linux基础
                                 </a>
                             
                             
@@ -1242,8 +1131,8 @@ PC1电脑配置ip地址为：192.168.4.3 子网掩码：255.255">
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Linux网络基础/" target="_blank">
-                        <span class="chip bg-color">Linux网络基础</span>
+                    <a href="/tags/Linux基础/" target="_blank">
+                        <span class="chip bg-color">Linux基础</span>
                     </a>
                     
                 </div>

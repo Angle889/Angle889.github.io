@@ -319,7 +319,7 @@
     (function() {
         let pwd = '';
         if (pwd && pwd.length > 0) {
-            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
                 location.href = '/';
             }
@@ -330,7 +330,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/58.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/35.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -1117,20 +1117,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/05/01/zhua-bao-fang-shi-he-wang-luo-chang-yong-ming-ling/">
+                <a href="/2020/05/01/linux-12-wei-quan-xian-ti-xi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/41.jpg" class="responsive-img" alt="抓包方式和网络常用命令">
+                        <img src="/medias/featureimages/35.jpg" class="responsive-img" alt="Linux  12位权限体系">
                         
-                        <span class="card-title">抓包方式和网络常用命令</span>
+                        <span class="card-title">Linux  12位权限体系</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            第一章：抓包方式1  .tcpdump 支持针对网络层、协议、主机、网络或端口的过滤，并提供and、or、not等逻辑语句来帮助你去掉无用的信息常用参数： -i               #监听哪一个网卡 
-​              
+                            第一章：前9位权限体系1  .RWX是什么？​    R  （read）         读         可以看文件 （cat less more head tail）
+   W （write）        写         可以写
                         
                     </div>
                     <div class="publish-info">
@@ -1141,8 +1141,8 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Linux网络基础/" class="post-category" target="_blank">
-                                    Linux网络基础
+                            <a href="/categories/Linux基础/" class="post-category" target="_blank">
+                                    Linux基础
                                 </a>
                             
                             
@@ -1152,8 +1152,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Linux网络基础/" target="_blank">
-                        <span class="chip bg-color">Linux网络基础</span>
+                    <a href="/tags/Linux基础/" target="_blank">
+                        <span class="chip bg-color">Linux基础</span>
                     </a>
                     
                 </div>
@@ -1167,22 +1167,27 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/01/da-pei-wang-luo-lu-you-biao/">
+                <a href="/2020/05/01/kai-ji-liu-cheng-yong-hu-guan-li/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/50.jpg" class="responsive-img" alt="搭配网络路由表">
+                        <img src="/medias/featureimages/40.jpg" class="responsive-img" alt="开机流程、用户管理">
                         
-                        <span class="card-title">搭配网络路由表</span>
+                        <span class="card-title">开机流程、用户管理</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            第一章：静态路由
-
-第一步：PC电脑IP配置PC0电脑配置ip地址为：192.168.1.2 子网掩码：255.255.255.0 网关：192.168.1.254
-PC1电脑配置ip地址为：192.168.4.3 子网掩码：255.255
+                            1  .开机流程面试题​    1.描述linux系统从开机到登陆界面的启动过程（记时2分钟）
+解答：
+简述：
+1）开机BIOS自检
+2）MBR引导
+3）grub引导菜单
+4）加载内核kernel
+5）启动init进程
+6）读取initta
                         
                     </div>
                     <div class="publish-info">
@@ -1193,8 +1198,8 @@ PC1电脑配置ip地址为：192.168.4.3 子网掩码：255.255
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Linux网络基础/" class="post-category" target="_blank">
-                                    Linux网络基础
+                            <a href="/categories/Linux基础/" class="post-category" target="_blank">
+                                    Linux基础
                                 </a>
                             
                             
@@ -1204,8 +1209,8 @@ PC1电脑配置ip地址为：192.168.4.3 子网掩码：255.255
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Linux网络基础/" target="_blank">
-                        <span class="chip bg-color">Linux网络基础</span>
+                    <a href="/tags/Linux基础/" target="_blank">
+                        <span class="chip bg-color">Linux基础</span>
                     </a>
                     
                 </div>
@@ -1248,7 +1253,7 @@ PC1电脑配置ip地址为：192.168.4.3 子网掩码：255.255
             + '来源: Angle的博客<br />'
             + '作者: Angle<br />'
             + '链接: <a href="' + url + '">' + url + '</a><br />'
-            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+            + '本文章著作权归Angle所有，任何形式的转载都请注明出处。';
 
         selection.selectAllChildren(newdiv);
         window.setTimeout(function () { bodyElement.removeChild(newdiv); }, 200);
@@ -1379,7 +1384,7 @@ PC1电脑配置ip地址为：192.168.4.3 子网掩码：255.255
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">42.3k</span>
+            <span class="white-color">42.7k</span>
             
 
             <br>

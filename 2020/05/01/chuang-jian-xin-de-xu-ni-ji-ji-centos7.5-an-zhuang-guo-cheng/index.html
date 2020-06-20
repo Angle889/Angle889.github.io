@@ -317,7 +317,7 @@ Ce">
     (function() {
         let pwd = '';
         if (pwd && pwd.length > 0) {
-            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
                 location.href = '/';
             }
@@ -328,7 +328,7 @@ Ce">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/36.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/30.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -1099,21 +1099,45 @@ Ce">
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/05/01/wu-fa-lian-jie-xu-ni-ji-shang-wang-pai-cuo/">
+                <a href="/2020/05/01/ming-ling-ti-shi-fu-yu-ge-shi-ming-ling-kuai-jie-jian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/41.jpg" class="responsive-img" alt="无法连接虚拟机、上网排错">
+                        <img src="/medias/featureimages/32.jpg" class="responsive-img" alt="命令提示符与格式、命令快捷键">
                         
-                        <span class="card-title">无法连接虚拟机、上网排错</span>
+                        <span class="card-title">命令提示符与格式、命令快捷键</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            第1章：无法连接虚拟机排错1）查看虚拟机的IP地址是否正常，10.0.1.200 /24 是否为24位
-2）是否能够ping通虚拟机IP地址。
-  1.如果不通，则在虚拟机内ping和自己能互联相同网段的物理机VMNET8的IP地址，如果还
+                            1 .命令提示符[root@oldboyedu ~]#为例
+
+
+
+提示符
+表示
+
+
+
+Root
+用户名(谁登录的这台服务器)或者当前用户
+
+
+@
+分割线
+
+
+Oldboyedu
+主机名称
+
+
+~
+代表了当前的路径 家目录
+
+
+#
+代表了管理
                         
                     </div>
                     <div class="publish-info">
@@ -1154,7 +1178,7 @@ Ce">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/39.jpg" class="responsive-img" alt="Linux系统介绍">
+                        <img src="/medias/featureimages/45.jpg" class="responsive-img" alt="Linux系统介绍">
                         
                         <span class="card-title">Linux系统介绍</span>
                     </div>
@@ -1228,7 +1252,7 @@ Ce">
             + '来源: Angle的博客<br />'
             + '作者: Angle<br />'
             + '链接: <a href="' + url + '">' + url + '</a><br />'
-            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+            + '本文章著作权归Angle所有，任何形式的转载都请注明出处。';
 
         selection.selectAllChildren(newdiv);
         window.setTimeout(function () { bodyElement.removeChild(newdiv); }, 200);
@@ -1359,7 +1383,7 @@ Ce">
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">42.3k</span>
+            <span class="white-color">42.7k</span>
             
 
             <br>

@@ -323,7 +323,7 @@
     (function() {
         let pwd = '';
         if (pwd && pwd.length > 0) {
-            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
                 location.href = '/';
             }
@@ -334,7 +334,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/34.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/40.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -1153,37 +1153,23 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/05/01/ming-ling-zong-jie/">
+                <a href="/2020/05/01/san-jian-ke-lao-da-awk/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/53.jpg" class="responsive-img" alt="命令总结">
+                        <img src="/medias/featureimages/35.jpg" class="responsive-img" alt="三剑客老大awk">
                         
-                        <span class="card-title">命令总结</span>
+                        <span class="card-title">三剑客老大awk</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            第1章：路径
-   路径分为两种：
-
-
-
-路径分类
-命令
-生活例子
-
-
-
-相对路径
-hosts oldboy.txt passwd
-隔壁305 隔壁304
-
-
-绝对路径
-/etc/oldboy /etc/passwd
-地球/亚洲/中国/广东
+                            1.1 awk的格式   awk ‘找谁{干啥}’ passwd.bak
+   awk ‘匹配{print }’ file
+1.2 awk变量awk把所有的字符当做变量 加上双引号视为字符串
+   NR    行号
+   1)文件的标准输入
                         
                     </div>
                     <div class="publish-info">
@@ -1220,24 +1206,22 @@ hosts oldboy.txt passwd
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/01/ding-shi-ren-wu/">
+                <a href="/2020/05/01/vim-bian-ji-qi-he-linux-mu-lu-jie-gou-guang-qu-gua-zai/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/32.jpg" class="responsive-img" alt="定时任务">
+                        <img src="/medias/featureimages/40.jpg" class="responsive-img" alt="VIM编辑器和linux目录结构、光驱挂载">
                         
-                        <span class="card-title">定时任务</span>
+                        <span class="card-title">VIM编辑器和linux目录结构、光驱挂载</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1  .定时任务：某个时间做某件事情​    Linux中定时任务：
-​      1）备份
-​      2）tar  打包-发送到备份服务器
-​      3）统计数据
-2  .什么时间使用定时任务打包?​      业务低谷期
-3  
+                            第一章：vim 编辑器 vi 1）第一个里程碑：如何进入到文件？如何打开文件？
+​    例子：vim oldboy.txt （如果文件不存在，则创建为新文件，无法创建目录）然后vim进入到视图模式。
+ 2）第二个里程碑：如何编辑？
+​  
                         
                     </div>
                     <div class="publish-info">
@@ -1303,7 +1287,7 @@ hosts oldboy.txt passwd
             + '来源: Angle的博客<br />'
             + '作者: Angle<br />'
             + '链接: <a href="' + url + '">' + url + '</a><br />'
-            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+            + '本文章著作权归Angle所有，任何形式的转载都请注明出处。';
 
         selection.selectAllChildren(newdiv);
         window.setTimeout(function () { bodyElement.removeChild(newdiv); }, 200);
@@ -1434,7 +1418,7 @@ hosts oldboy.txt passwd
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">42.3k</span>
+            <span class="white-color">42.7k</span>
             
 
             <br>

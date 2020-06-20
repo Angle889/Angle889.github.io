@@ -319,7 +319,7 @@ centos的安装软件的">
     (function() {
         let pwd = '';
         if (pwd && pwd.length > 0) {
-            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
                 location.href = '/';
             }
@@ -330,7 +330,7 @@ centos的安装软件的">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/45.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/51.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -1107,47 +1107,27 @@ centos的安装软件的">
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/05/01/linux-wen-jian-lei-xing-ying-ruan-lian-jie/">
+                <a href="/2020/05/01/ji-suan-ji-ying-jian-yu-zu-cheng-yuan-li/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/49.jpg" class="responsive-img" alt="Linux 文件类型、硬软链接">
+                        <img src="/medias/featureimages/39.jpg" class="responsive-img" alt="计算机硬件与组成原理">
                         
-                        <span class="card-title">Linux 文件类型、硬软链接</span>
+                        <span class="card-title">计算机硬件与组成原理</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-
-
-33575001
--
-rw-r–r–
-.
-1
-root
-root
-18
-12月 12 20:37
-bash.sh
-
-
-
-inode
-文件的类型
-文件的权限
-selinux
-硬链接个数
-属主
-属组
-文    件的大小
-时间
-文件名
-
-
-
+                            第一章：服务器硬件1.1服务器种类
+  1）硬件服务器
+  2）云服务器
+1.2服务器外观分类
+  1）机架式服务器
+  2）塔式服务器(台式机差不多)
+  3）刀片式服务器
+1.3服务器品牌厂商
+  笔记本: 联想 DELL HP 华硕 
                         
                     </div>
                     <div class="publish-info">
@@ -1184,24 +1164,22 @@ selinux
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/01/san-jian-ke-zhong-de-sed-pi-pei/">
+                <a href="/2020/05/01/find-cha-zhao-wen-jian-da-bao-ya-suo/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/58.jpg" class="responsive-img" alt="三剑客中的sed匹配">
+                        <img src="/medias/featureimages/34.jpg" class="responsive-img" alt="find 查找文件、打包压缩">
                         
-                        <span class="card-title">三剑客中的sed匹配</span>
+                        <span class="card-title">find 查找文件、打包压缩</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            sed  替换 查找内容
-1 .格式:​       sed ‘模式 动作’ file
-​       sed ‘找谁 干啥’ file
-​        -n     取消默认输出
-​        -r    支持扩展正则
-​    s
+                            1 .find的格式：​         find 在哪里找 -类型 f -名字 “国产”
+​         find /tmp -type f  -name “test.txt”
+​         -类型 -type
+​       
                         
                     </div>
                     <div class="publish-info">
@@ -1267,7 +1245,7 @@ selinux
             + '来源: Angle的博客<br />'
             + '作者: Angle<br />'
             + '链接: <a href="' + url + '">' + url + '</a><br />'
-            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+            + '本文章著作权归Angle所有，任何形式的转载都请注明出处。';
 
         selection.selectAllChildren(newdiv);
         window.setTimeout(function () { bodyElement.removeChild(newdiv); }, 200);
@@ -1398,7 +1376,7 @@ selinux
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">42.3k</span>
+            <span class="white-color">42.7k</span>
             
 
             <br>

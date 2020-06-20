@@ -318,7 +318,7 @@
     (function() {
         let pwd = '';
         if (pwd && pwd.length > 0) {
-            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
                 location.href = '/';
             }
@@ -329,7 +329,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/58.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/35.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -1114,26 +1114,22 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/05/01/lian-xi-ti/">
+                <a href="/2020/05/01/zheng-ze-grep-yu-kuo-zhan-zheng-ze-egrep-cha-zhao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/52.jpg" class="responsive-img" alt="练习题">
+                        <img src="/medias/featureimages/36.jpg" class="responsive-img" alt="正则grep与扩展正则egrep查找">
                         
-                        <span class="card-title">练习题</span>
+                        <span class="card-title">正则grep与扩展正则egrep查找</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            练习题一1.如何探测网络是否畅通
-   ping 域名
-2.如何查看IP地址(两个命令)
-   ip addr 和  ifconfig
-3.写出你知道的关机跟重启的命令
-   hatl  reboot
-4.如何查看帮助
-   man + 命
+                            1  .什么是正则表达式 1） 正则表达式就是为了处理大量的文字|文本|字符串而定义的一套规则和方法。
+2）通过定义的这些特殊符号的辅助，系统管理员就可以快速过滤，替换或输出需要的字符串。
+3）Linux正则表达式一般以行为单位处理的。
+简
                         
                     </div>
                     <div class="publish-info">
@@ -1170,25 +1166,21 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/01/ci-pan-guan-li/">
+                <a href="/2020/05/01/pi-liang-chuang-jian-yong-hu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/31.jpg" class="responsive-img" alt="磁盘管理">
+                        <img src="/medias/featureimages/46.jpg" class="responsive-img" alt="批量创建用户">
                         
-                        <span class="card-title">磁盘管理</span>
+                        <span class="card-title">批量创建用户</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1  .磁盘的外部结构​      1）外观
-​         固态硬盘
-​         机械硬盘
-​      2）接口  连接服务器的RAID卡
-​        SAS SATA SCSI
-​        SAS   企业级
-
+                            1  .sed方式批量创建test01..test10的用户
+   例子：echo test{01..10}|xargs -n1|sed -r ‘s#(.*)#useradd \1#g’|bash
+   sed 方式批量创建test01..
                         
                     </div>
                     <div class="publish-info">
@@ -1254,7 +1246,7 @@
             + '来源: Angle的博客<br />'
             + '作者: Angle<br />'
             + '链接: <a href="' + url + '">' + url + '</a><br />'
-            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+            + '本文章著作权归Angle所有，任何形式的转载都请注明出处。';
 
         selection.selectAllChildren(newdiv);
         window.setTimeout(function () { bodyElement.removeChild(newdiv); }, 200);
@@ -1385,7 +1377,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">42.3k</span>
+            <span class="white-color">42.7k</span>
             
 
             <br>
